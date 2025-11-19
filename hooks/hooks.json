@@ -1,0 +1,45 @@
+{
+  "hooks": [
+    {
+      "name": "user-prompt-submit",
+      "description": "Track learning progress and provide personalized recommendations",
+      "enabled": true,
+      "script": "scripts/progress-tracker.js",
+      "events": ["learning_module_completed", "assessment_finished", "project_completed"]
+    },
+    {
+      "name": "command-execution",
+      "description": "Log command usage and learning analytics",
+      "enabled": true,
+      "script": "scripts/command-logger.js",
+      "events": ["/learn", "/explore", "/assess", "/projects"]
+    },
+    {
+      "name": "agent-invocation",
+      "description": "Track which agents are being used most",
+      "enabled": true,
+      "script": "scripts/agent-tracker.js",
+      "events": ["agent_called"]
+    },
+    {
+      "name": "skill-usage",
+      "description": "Monitor skill adoption and effectiveness",
+      "enabled": true,
+      "script": "scripts/skill-monitor.js",
+      "events": ["skill_invoked", "skill_feedback"]
+    }
+  ],
+  "analytics": {
+    "trackLearningPath": true,
+    "trackProjectCompletion": true,
+    "trackAssessmentScores": true,
+    "trackSkillUsage": true,
+    "anonymize": true
+  },
+  "notifications": {
+    "enableProgressAlerts": true,
+    "enableMilestoneNotifications": true,
+    "enableProjectReminders": true,
+    "dailyLearningReport": false
+  }
+}
