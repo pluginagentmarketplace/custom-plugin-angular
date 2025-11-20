@@ -1,9 +1,9 @@
 ---
-name: typescript-mastery
-description: Master TypeScript type system, generics, decorators, and advanced features essential for Angular development. Use when learning TypeScript fundamentals, working with complex types, or understanding decorators for Angular.
+name: typescript-implementation
+description: Implement TypeScript patterns, convert JavaScript to TypeScript, add type annotations, create generics, implement decorators, and enforce strict type safety in Angular projects.
 ---
 
-# TypeScript Mastery
+# TypeScript Implementation Skill
 
 ## Quick Start
 

@@ -1,9 +1,9 @@
 ---
-name: state-management-advanced
-description: Master state management patterns including NgRx, Akita, services, and Angular Signals. Use when managing complex application state, implementing time-travel debugging, or building scalable applications.
+name: state-implementation
+description: Implement NgRx store with actions and reducers, build selectors, create effects for async operations, configure entity adapters, and integrate HTTP APIs with state management.
 ---
 
-# State Management & APIs
+# State Implementation Skill
 
 ## Quick Start
 

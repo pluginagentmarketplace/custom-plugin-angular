@@ -1,9 +1,9 @@
 ---
-name: rxjs-mastery
-description: Master RxJS Observables, subjects, and operators for reactive Angular applications. Use when working with async data, subscriptions, or implementing reactive patterns.
+name: rxjs-implementation
+description: Implement RxJS observables, apply operators, fix memory leaks with unsubscribe patterns, handle errors, create subjects, and build reactive data pipelines in Angular applications.
 ---
 
-# RxJS Mastery
+# RxJS Implementation Skill
 
 ## Quick Start
 

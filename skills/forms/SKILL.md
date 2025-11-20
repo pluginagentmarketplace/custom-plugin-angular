@@ -1,9 +1,9 @@
 ---
-name: angular-forms
-description: Build robust forms using reactive and template-driven approaches with validation, custom validators, and async validation. Use when creating forms, handling validation, or building form-based features.
+name: forms-implementation
+description: Build reactive and template-driven forms, implement custom validators, create async validators, add cross-field validation, and generate dynamic forms for Angular applications.
 ---
 
-# Angular Forms
+# Forms Implementation Skill
 
 ## Quick Start
 
