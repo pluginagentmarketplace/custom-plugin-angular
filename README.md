@@ -6,15 +6,16 @@
 
 **Build modern Angular applications faster with AI-powered implementation agents**
 
+[![License](https://img.shields.io/badge/License-MIT-yellow?style=flat-square)](LICENSE)
+[![Version](https://img.shields.io/badge/Version-2.0.0-blue?style=flat-square)](https://github.com/pluginagentmarketplace/custom-plugin-angular)
+[![Status](https://img.shields.io/badge/Status-Production_Ready-brightgreen?style=flat-square)](https://github.com/pluginagentmarketplace/custom-plugin-angular)
+[![Agents](https://img.shields.io/badge/Agents-8-orange?style=flat-square)](#-agents-overview)
+[![Skills](https://img.shields.io/badge/Skills-8-purple?style=flat-square)](#-skills-reference)
+
 [![Angular](https://img.shields.io/badge/Angular-18%2B-red?style=for-the-badge&logo=angular)](https://angular.dev)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.4-blue?style=for-the-badge&logo=typescript)](https://www.typescriptlang.org/)
-[![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)](LICENSE)
-[![Version](https://img.shields.io/badge/Version-2.0.0-purple?style=for-the-badge)](https://github.com/pluginagentmarketplace/custom-plugin-angular)
-
-[![Signals](https://img.shields.io/badge/✨_Signals-Ready-brightgreen?style=flat-square)](https://angular.dev/guide/signals)
-[![Standalone](https://img.shields.io/badge/🎯_Standalone-Supported-blue?style=flat-square)](https://angular.dev/guide/standalone)
-[![SSR](https://img.shields.io/badge/🚀_SSR-Enabled-orange?style=flat-square)](https://angular.dev/guide/ssr)
-[![@defer](https://img.shields.io/badge/⚙️_@defer-Implemented-yellow?style=flat-square)](https://angular.dev/guide/defer)
+[![Signals](https://img.shields.io/badge/✨_Signals-Ready-brightgreen?style=for-the-badge)](https://angular.dev/guide/signals)
+[![SSR](https://img.shields.io/badge/🚀_SSR-Enabled-orange?style=for-the-badge)](https://angular.dev/guide/ssr)
 
 [🚀 Get Started](#-quick-start) • [📖 Documentation](#-agents-overview) • [🎯 Features](#-modern-angular-18-features) • [💡 Examples](#-usage-examples)
 
