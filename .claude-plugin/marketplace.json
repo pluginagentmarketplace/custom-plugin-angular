@@ -7,22 +7,16 @@
   "metadata": {
     "description": "Community marketplace for Angular development plugins and tools",
     "version": "1.0.0",
-    "updated": "2025-11-20"
+    "updated": "2025-11-20",
+    "pluginRoot": "./"
   },
   "plugins": [
     {
       "name": "angular-dev",
-      "source": "pluginagentmarketplace/custom-plugin-angular",
-      "description": "Professional Angular 18+ development plugin with 8 specialized implementation agents. Build modern Angular apps with Signals, standalone components, SSR, @defer blocks, TypeScript, RxJS, NgRx, forms, routing, testing, and CI/CD.",
-      "author": {
-        "name": "Angular Plugin Agent Marketplace",
-        "url": "https://github.com/pluginagentmarketplace"
-      },
+      "source": "./",
+      "description": "Professional Angular 18+ development plugin with 8 specialized implementation agents. Build modern Angular apps with Signals, standalone components, SSR, @defer blocks, TypeScript, RxJS, NgRx, forms, routing, testing, and CI/CD. Includes comprehensive skills for modern Angular development.",
       "version": "2.0.0",
-      "homepage": "https://github.com/pluginagentmarketplace/custom-plugin-angular",
-      "repository": "https://github.com/pluginagentmarketplace/custom-plugin-angular",
-      "license": "MIT",
-      "category": "Development",
+      "category": "web-development",
       "keywords": [
         "angular",
         "angular-18",
@@ -45,20 +39,12 @@
         "zoneless",
         "material-3"
       ],
-      "features": [
-        "8 specialized implementation agents",
-        "Angular 18+ modern features (Signals, standalone, SSR, @defer)",
-        "Production-ready code generation",
-        "TypeScript strict mode support",
-        "RxJS reactive programming patterns",
-        "NgRx state management",
-        "Forms and validation",
-        "Routing and performance optimization",
-        "Testing and CI/CD deployment"
-      ],
-      "agents": 8,
-      "skills": 8,
-      "commands": 4
+      "author": {
+        "name": "Plugin Agent Marketplace",
+        "email": "plugins@pluginagentmarketplace.com"
+      },
+      "repository": "https://github.com/pluginagentmarketplace/custom-plugin-angular",
+      "homepage": "https://github.com/pluginagentmarketplace/custom-plugin-angular"
     }
   ]
 }
