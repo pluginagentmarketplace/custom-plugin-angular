@@ -1,12 +1,16 @@
 {
-  "name": "Angular Development Assistant",
+  "name": "angular-development-assistant",
   "version": "2.0.0",
   "description": "Professional Angular 18+ development plugin with 8 specialized implementation agents. Build modern Angular apps with Signals, standalone components, SSR, @defer blocks, TypeScript, RxJS, NgRx, forms, routing, testing, and CI/CD.",
-  "author": "Angular Plugin Agent Marketplace",
+  "author": {
+    "name": "Plugin Agent Marketplace",
+    "email": "plugins@pluginagentmarketplace.com",
+    "url": "https://github.com/pluginagentmarketplace"
+  },
   "license": "MIT",
   "repository": "https://github.com/pluginagentmarketplace/custom-plugin-angular",
-  "category": "Development",
-  "tags": [
+  "homepage": "https://github.com/pluginagentmarketplace/custom-plugin-angular",
+  "keywords": [
     "angular",
     "angular-18",
     "signals",
@@ -27,18 +31,6 @@
     "refactoring",
     "zoneless",
     "material-3"
-  ],
-  "keywords": [
-    "angular",
-    "typescript",
-    "rxjs",
-    "state-management",
-    "routing",
-    "forms",
-    "testing",
-    "deployment",
-    "ngrx",
-    "frontend"
   ],
   "agents": [
     {
@@ -161,34 +153,5 @@
       "file": "commands/projects.md",
       "description": "Browse hands-on projects and practice your skills"
     }
-  ],
-  "hooks": {
-    "file": "hooks/hooks.json"
-  },
-  "metadata": {
-    "type": "implementation",
-    "framework": "Angular",
-    "targetVersion": "18.0.0+",
-    "modernFeatures": [
-      "signals",
-      "standalone-components",
-      "deferrable-views",
-      "ssr-hydration",
-      "zoneless",
-      "material-3",
-      "control-flow"
-    ],
-    "capabilities": [
-      "code-generation",
-      "refactoring",
-      "testing",
-      "deployment",
-      "optimization",
-      "modernization"
-    ],
-    "agentType": "action-oriented",
-    "primaryUseCase": "building-modern-angular-applications",
-    "angularVersion": "18+",
-    "releaseDate": "2025"
-  }
+  ]
 }
