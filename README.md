@@ -99,8 +99,27 @@ Each agent is an expert in its domain
 
 ### Installation
 
+**Option 1: Via Marketplace (Recommended)**
+
 ```bash
-# Clone the plugin
+# Add the marketplace
+/plugin marketplace add pluginagentmarketplace/custom-plugin-angular
+
+# Install the plugin
+/plugin install angular-dev@angular-dev
+```
+
+**Option 2: Direct from GitHub**
+
+```bash
+# Add the plugin directly from GitHub
+/plugin add pluginagentmarketplace/custom-plugin-angular
+```
+
+**Option 3: Local Development**
+
+```bash
+# Clone the repository
 git clone https://github.com/pluginagentmarketplace/custom-plugin-angular.git
 
 # Load in Claude Code
@@ -121,6 +140,16 @@ git clone https://github.com/pluginagentmarketplace/custom-plugin-angular.git
 
 # Add SSR
 "Set up server-side rendering with hydration"
+```
+
+### Verify Installation
+
+```bash
+# List installed plugins
+/plugin list
+
+# Check agent availability
+/explore
 ```
 
 ---
