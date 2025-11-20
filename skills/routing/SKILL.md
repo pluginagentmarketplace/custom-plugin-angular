@@ -1,9 +1,9 @@
 ---
-name: angular-routing
-description: Master Angular routing including lazy loading, route guards, code splitting, and performance optimization. Use when building application navigation, implementing access control, or optimizing application performance.
+name: routing-performance-implementation
+description: Configure routing with lazy loading, implement route guards, set up preloading strategies, optimize change detection, analyze bundles, and implement performance optimizations.
 ---
 
-# Angular Routing & Performance
+# Routing & Performance Implementation Skill
 
 ## Quick Start
 

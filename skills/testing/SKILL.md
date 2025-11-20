@@ -1,9 +1,9 @@
 ---
-name: angular-testing-deployment
-description: Master Angular testing with Jasmine and Cypress, build optimization, deployment strategies, and CI/CD pipelines. Use when writing tests, deploying applications, or setting up automated workflows.
+name: testing-deployment-implementation
+description: Write unit tests for components and services, implement E2E tests with Cypress, set up test mocks, optimize production builds, configure CI/CD pipelines, and deploy to production platforms.
 ---
 
-# Angular Testing & Deployment
+# Testing & Deployment Implementation Skill
 
 ## Unit Testing Basics
 

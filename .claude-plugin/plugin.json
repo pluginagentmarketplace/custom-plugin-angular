@@ -1,108 +1,124 @@
 {
-  "name": "Angular Roadmap Plugin",
+  "name": "Angular Development Assistant",
   "version": "1.0.0",
-  "description": "Complete Angular learning path with 7 specialized agents, 7 expert skills, hands-on projects, and interactive assessments. Master modern Angular 2025 development from fundamentals to advanced patterns.",
+  "description": "Professional Angular development plugin with 7 specialized implementation agents that build, refactor, test, and deploy Angular applications. Implements TypeScript patterns, RxJS streams, NgRx state, forms, routing, testing, and CI/CD.",
   "author": "Angular Plugin Agent Marketplace",
   "license": "MIT",
   "repository": "https://github.com/pluginagentmarketplace/custom-plugin-angular",
+  "category": "Development",
+  "tags": [
+    "angular",
+    "typescript",
+    "rxjs",
+    "ngrx",
+    "state-management",
+    "routing",
+    "forms",
+    "testing",
+    "deployment",
+    "frontend",
+    "web-development",
+    "implementation",
+    "refactoring"
+  ],
   "keywords": [
     "angular",
-    "learning",
-    "roadmap",
     "typescript",
     "rxjs",
     "state-management",
     "routing",
     "forms",
     "testing",
-    "deployment"
+    "deployment",
+    "ngrx",
+    "frontend"
   ],
   "agents": [
     {
-      "id": "typescript-fundamentals",
-      "name": "TypeScript Fundamentals",
+      "id": "typescript-implementation",
+      "name": "TypeScript Implementation",
       "file": "agents/01-typescript-fundamentals.md",
-      "description": "Master TypeScript type system, OOP, decorators, and advanced features for Angular development"
+      "description": "Converts JavaScript to TypeScript, fixes type errors, implements generics and decorators, enforces type safety"
     },
     {
-      "id": "angular-core",
-      "name": "Angular Core Architecture",
+      "id": "angular-core-builder",
+      "name": "Angular Core Builder",
       "file": "agents/02-angular-core.md",
-      "description": "Learn Angular's fundamental building blocks: components, services, dependency injection, and modules"
+      "description": "Generates components, services, modules, and directives. Implements DI patterns and lifecycle hooks"
     },
     {
-      "id": "reactive-programming",
-      "name": "Reactive Programming & RxJS",
+      "id": "rxjs-implementation",
+      "name": "RxJS Implementation",
       "file": "agents/03-reactive-programming.md",
-      "description": "Master RxJS Observables, subjects, operators, and reactive patterns for modern Angular applications"
+      "description": "Implements observables, applies RxJS operators, fixes memory leaks, builds reactive data pipelines"
     },
     {
-      "id": "forms-directives",
-      "name": "Forms, Validation & Directives",
+      "id": "forms-builder",
+      "name": "Angular Forms Builder",
       "file": "agents/04-forms-directives.md",
-      "description": "Build robust forms with validation, custom directives, and advanced form patterns"
+      "description": "Builds reactive forms, implements validators, creates directives, generates dynamic forms"
     },
     {
       "id": "routing-performance",
-      "name": "Routing, Performance & Advanced Patterns",
+      "name": "Routing & Performance",
       "file": "agents/05-routing-performance.md",
-      "description": "Design scalable applications with lazy loading, route guards, and performance optimization"
+      "description": "Configures routing with lazy loading, creates guards, optimizes bundles, implements OnPush strategy"
     },
     {
-      "id": "state-management",
-      "name": "State Management & APIs",
+      "id": "state-implementation",
+      "name": "State Management Implementation",
       "file": "agents/06-state-management.md",
-      "description": "Master NgRx, Akita, services, and Angular Signals for managing complex application state"
+      "description": "Implements NgRx store, creates actions/reducers, builds selectors, configures entity adapters"
     },
     {
       "id": "testing-deployment",
-      "name": "Testing, Build & Deployment",
+      "name": "Testing & Deployment",
       "file": "agents/07-testing-deployment.md",
-      "description": "Learn unit and E2E testing, build optimization, CI/CD pipelines, and production deployment strategies"
+      "description": "Writes unit and E2E tests, optimizes builds, sets up CI/CD, deploys to production platforms"
     }
   ],
   "skills": [
     {
-      "id": "typescript-mastery",
-      "name": "TypeScript Mastery",
+      "id": "typescript-implementation",
+      "name": "TypeScript Implementation",
       "file": "skills/typescript/SKILL.md",
-      "description": "Essential TypeScript concepts for Angular development"
+      "description": "Implement TypeScript patterns: types, generics, decorators, strict mode configurations"
     },
     {
-      "id": "angular-core-patterns",
-      "name": "Angular Core Patterns",
+      "id": "angular-core-implementation",
+      "name": "Angular Core Implementation",
       "file": "skills/core/SKILL.md",
-      "description": "Core Angular patterns and best practices"
+      "description": "Build components, services, modules with DI, lifecycle hooks, and data binding"
     },
     {
-      "id": "rxjs-mastery",
-      "name": "RxJS Mastery",
+      "id": "rxjs-implementation",
+      "name": "RxJS Implementation",
       "file": "skills/rxjs/SKILL.md",
-      "description": "RxJS operators, subjects, and reactive patterns"
+      "description": "Implement observables, operators, subjects, and reactive stream patterns"
     },
     {
-      "id": "angular-forms",
-      "name": "Angular Forms",
+      "id": "forms-implementation",
+      "name": "Forms Implementation",
       "file": "skills/forms/SKILL.md",
-      "description": "Form creation, validation, and advanced patterns"
+      "description": "Build reactive forms, validators, directives, and dynamic form generation"
     },
     {
-      "id": "angular-routing",
-      "name": "Angular Routing & Performance",
+      "id": "routing-performance-implementation",
+      "name": "Routing & Performance",
       "file": "skills/routing/SKILL.md",
-      "description": "Routing strategies, lazy loading, and performance optimization"
+      "description": "Configure routing, lazy loading, guards, and performance optimizations"
     },
     {
-      "id": "state-management-advanced",
-      "name": "State Management & APIs",
+      "id": "state-implementation",
+      "name": "State Implementation",
       "file": "skills/state-management/SKILL.md",
-      "description": "NgRx, Signals, and HTTP integration patterns"
+      "description": "Implement NgRx store, actions, reducers, effects, selectors, entity adapters"
     },
     {
-      "id": "angular-testing-deployment",
-      "name": "Angular Testing & Deployment",
+      "id": "testing-deployment-implementation",
+      "name": "Testing & Deployment",
       "file": "skills/testing/SKILL.md",
-      "description": "Testing strategies and production deployment"
+      "description": "Write tests, optimize builds, configure CI/CD, deploy to production"
     }
   ],
   "commands": [
@@ -131,10 +147,17 @@
     "file": "hooks/hooks.json"
   },
   "metadata": {
-    "completionHours": 1000,
-    "projects": 50,
-    "codeExamples": 1500,
-    "difficulty": "beginner-to-advanced",
-    "targetVersion": "18.0.0+"
+    "type": "implementation",
+    "framework": "Angular",
+    "targetVersion": "18.0.0+",
+    "capabilities": [
+      "code-generation",
+      "refactoring",
+      "testing",
+      "deployment",
+      "optimization"
+    ],
+    "agentType": "action-oriented",
+    "primaryUseCase": "building-and-maintaining-angular-applications"
   }
 }

@@ -1,9 +1,9 @@
 ---
-name: angular-core-patterns
-description: Master Angular core patterns including components, services, dependency injection, modules, and lifecycle hooks. Use when building components, designing services, or understanding Angular architecture.
+name: angular-core-implementation
+description: Generate Angular components, services, modules, and directives. Implement dependency injection, lifecycle hooks, data binding, and build production-ready Angular architectures.
 ---
 
-# Angular Core Patterns
+# Angular Core Implementation Skill
 
 ## Quick Start
 
