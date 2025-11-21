@@ -33,29 +33,29 @@
     "material-3"
   ],
   "agents": [
-    "../agents/01-typescript-fundamentals.md",
-    "../agents/02-angular-core.md",
-    "../agents/03-reactive-programming.md",
-    "../agents/04-forms-directives.md",
-    "../agents/05-routing-performance.md",
-    "../agents/06-state-management.md",
-    "../agents/07-testing-deployment.md",
-    "../agents/08-modern-angular.md"
+    "./agents/01-typescript-fundamentals.md",
+    "./agents/02-angular-core.md",
+    "./agents/03-reactive-programming.md",
+    "./agents/04-forms-directives.md",
+    "./agents/05-routing-performance.md",
+    "./agents/06-state-management.md",
+    "./agents/07-testing-deployment.md",
+    "./agents/08-modern-angular.md"
   ],
   "skills": [
-    "../skills/typescript/SKILL.md",
-    "../skills/core/SKILL.md",
-    "../skills/rxjs/SKILL.md",
-    "../skills/forms/SKILL.md",
-    "../skills/routing/SKILL.md",
-    "../skills/state-management/SKILL.md",
-    "../skills/testing/SKILL.md",
-    "../skills/modern-angular/SKILL.md"
+    "./skills/typescript/SKILL.md",
+    "./skills/core/SKILL.md",
+    "./skills/rxjs/SKILL.md",
+    "./skills/forms/SKILL.md",
+    "./skills/routing/SKILL.md",
+    "./skills/state-management/SKILL.md",
+    "./skills/testing/SKILL.md",
+    "./skills/modern-angular/SKILL.md"
   ],
   "commands": [
-    "../commands/learn.md",
-    "../commands/explore.md",
-    "../commands/assess.md",
-    "../commands/projects.md"
+    "./commands/learn.md",
+    "./commands/explore.md",
+    "./commands/assess.md",
+    "./commands/projects.md"
   ]
 }
