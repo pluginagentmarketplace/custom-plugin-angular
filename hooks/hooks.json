@@ -1,7 +1,7 @@
 {
   "description": "Angular plugin hooks configuration - currently minimal for maximum compatibility",
   "version": "1.0.0",
-  "hooks": [],
+  "hooks": {},
   "metadata": {
     "note": "This plugin focuses on providing action-oriented agents and skills for Angular development. Hooks can be added later for custom workflows."
   }
