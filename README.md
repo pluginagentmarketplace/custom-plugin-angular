@@ -1,339 +1,157 @@
 <div align="center">
 
-# ⚡ Angular Development Assistant
+# Angular Development Assistant
 
 ### Professional Angular 18+ Plugin for Claude Code
 
 **Build modern Angular applications faster with AI-powered implementation agents**
 
+[![Verified](https://img.shields.io/badge/Verified-Working-success?style=flat-square&logo=checkmarx)](https://github.com/pluginagentmarketplace/custom-plugin-angular)
 [![License](https://img.shields.io/badge/License-MIT-yellow?style=flat-square)](LICENSE)
 [![Version](https://img.shields.io/badge/Version-2.0.0-blue?style=flat-square)](https://github.com/pluginagentmarketplace/custom-plugin-angular)
 [![Status](https://img.shields.io/badge/Status-Production_Ready-brightgreen?style=flat-square)](https://github.com/pluginagentmarketplace/custom-plugin-angular)
-[![Agents](https://img.shields.io/badge/Agents-8-orange?style=flat-square)](#-agents-overview)
-[![Skills](https://img.shields.io/badge/Skills-8-purple?style=flat-square)](#-skills-reference)
+[![Agents](https://img.shields.io/badge/Agents-8-orange?style=flat-square)](#agents-overview)
+[![Skills](https://img.shields.io/badge/Skills-8-purple?style=flat-square)](#skills-reference)
 
 [![Angular](https://img.shields.io/badge/Angular-18%2B-red?style=for-the-badge&logo=angular)](https://angular.dev)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.4-blue?style=for-the-badge&logo=typescript)](https://www.typescriptlang.org/)
-[![Signals](https://img.shields.io/badge/✨_Signals-Ready-brightgreen?style=for-the-badge)](https://angular.dev/guide/signals)
-[![SSR](https://img.shields.io/badge/🚀_SSR-Enabled-orange?style=for-the-badge)](https://angular.dev/guide/ssr)
+[![Signals](https://img.shields.io/badge/Signals-Ready-brightgreen?style=for-the-badge)](https://angular.dev/guide/signals)
+[![SSR](https://img.shields.io/badge/SSR-Enabled-orange?style=for-the-badge)](https://angular.dev/guide/ssr)
 
-[🚀 Get Started](#-quick-start) • [📖 Documentation](#-agents-overview) • [🎯 Features](#-modern-angular-18-features) • [💡 Examples](#-usage-examples)
+[Quick Start](#quick-start) | [Agents](#agents-overview) | [Skills](#skills-reference) | [Examples](#usage-examples)
 
 </div>
 
 ---
 
-## 🎬 See It In Action
+## Verified Installation
 
-<!-- GIF Placeholder - User should add animated demo -->
-```
-┌─────────────────────────────────────────────────────────┐
-│                                                         │
-│     [Add animated GIF demo here]                        │
-│                                                         │
-│     Showing:                                            │
-│     • Signal implementation                              │
-│     • Standalone component migration                     │
-│     • @defer block creation                             │
-│     • Real-time code generation                         │
-│                                                         │
-└─────────────────────────────────────────────────────────┘
-```
-
-> **💡 Tip:** Record a quick demo using [Screen to GIF](https://www.screentogif.com/) or [Kap](https://getkap.co/)
+> **This plugin has been tested and verified working on Claude Code.**
+> Last verified: December 2025
 
 ---
 
-## ⚡ What Makes This Plugin Special?
+## Quick Start
 
-<table>
-<tr>
-<td width="50%">
-
-### 🎯 **Action-Oriented Agents**
-Agents that **DO** the work, not just teach
-- ✅ Generate production-ready code
-- ✅ Refactor existing codebases
-- ✅ Implement modern patterns
-- ✅ Fix issues automatically
-
-</td>
-<td width="50%">
-
-### 🚀 **Angular 18+ Modern**
-Built for the latest Angular features
-- ✅ Signals & Computed Values
-- ✅ Standalone Components
-- ✅ Deferrable Views (@defer)
-- ✅ SSR & Hydration
-
-</td>
-</tr>
-<tr>
-<td width="50%">
-
-### 💎 **Production Ready**
-Enterprise-grade code generation
-- ✅ TypeScript strict mode
-- ✅ Best practices built-in
-- ✅ Performance optimized
-- ✅ Test coverage included
-
-</td>
-<td width="50%">
-
-### ⚙️ **8 Specialized Agents**
-Each agent is an expert in its domain
-- ✅ TypeScript Implementation
-- ✅ Modern Angular (18+)
-- ✅ RxJS & Reactive Patterns
-- ✅ State Management (NgRx)
-
-</td>
-</tr>
-</table>
-
----
-
-## 🚀 Quick Start
-
-### Installation
-
-**Option 1: Via Marketplace (Recommended)**
-
-```bash
-# Add the marketplace
-/plugin marketplace add pluginagentmarketplace/custom-plugin-angular
-
-# Install the plugin
-/plugin install angular-dev@angular-dev
-```
-
-**Option 2: Direct from GitHub**
-
-```bash
-# Add the plugin directly from GitHub
-/plugin add pluginagentmarketplace/custom-plugin-angular
-```
-
-**Option 3: Local Development**
+### Option 1: Clone and Load (Recommended)
 
 ```bash
 # Clone the repository
 git clone https://github.com/pluginagentmarketplace/custom-plugin-angular.git
 
-# Load in Claude Code
-# Point to: ./custom-plugin-angular
+# Navigate to the directory in Claude Code
+cd custom-plugin-angular
+
+# Load the plugin
+/plugin load .
 ```
 
-### First Commands
+After loading, restart Claude Code. The plugin will be available as `angular-development-assistant`.
+
+### Option 2: Direct GitHub Clone
 
 ```bash
-# Explore all agents
-/explore
+# Clone to your plugins directory
+cd ~/.claude/plugins
+git clone https://github.com/pluginagentmarketplace/custom-plugin-angular.git
 
-# Implement Angular Signals
-"Convert this service to use Signals instead of BehaviorSubject"
-
-# Migrate to standalone
-"Migrate this NgModule app to standalone components"
-
-# Add SSR
-"Set up server-side rendering with hydration"
+# Restart Claude Code
 ```
 
 ### Verify Installation
 
-```bash
-# List installed plugins
-/plugin list
+After restarting Claude Code, verify the plugin is loaded. You should see these agents available:
 
-# Check agent availability
-/explore
+```
+angular-development-assistant:01-typescript-fundamentals
+angular-development-assistant:02-angular-core
+angular-development-assistant:03-reactive-programming
+angular-development-assistant:04-forms-directives
+angular-development-assistant:05-routing-performance
+angular-development-assistant:06-state-management
+angular-development-assistant:07-testing-deployment
+angular-development-assistant:08-modern-angular
 ```
 
 ---
 
-## 🎯 Modern Angular 18+ Features
+## Available Skills
 
-<div align="center">
+Once installed, these skills become available:
 
-```
-┌──────────────────────────────────────────────────────────────┐
-│                                                              │
-│   🎯 Signals          🏗️ Standalone       ⚡ @defer        │
-│   signal()            No NgModules        Lazy loading      │
-│   computed()          Tree-shakable       Performance       │
-│   effect()            Simple imports      Strategic         │
-│                                                              │
-│   🌐 SSR              🚫 Zoneless         🎨 Material 3    │
-│   Hydration           Performance+        Modern design     │
-│   Core Web Vitals     No Zone.js          M3 components    │
-│   SEO-friendly        Faster CD           New theming       │
-│                                                              │
-│   🔄 Control Flow     📦 TypeScript       🧪 Testing       │
-│   @if/@for/@switch    5.4+ support        Unit + E2E        │
-│   Cleaner syntax      Latest features     CI/CD ready       │
-│   Better types        Strict mode         Production        │
-│                                                              │
-└──────────────────────────────────────────────────────────────┘
-```
-
-</div>
+| Skill | Invoke Command |
+|-------|----------------|
+| TypeScript | `Skill("angular-development-assistant:typescript")` |
+| Angular Core | `Skill("angular-development-assistant:core")` |
+| RxJS | `Skill("angular-development-assistant:rxjs")` |
+| Forms | `Skill("angular-development-assistant:forms")` |
+| Routing | `Skill("angular-development-assistant:routing")` |
+| State Management | `Skill("angular-development-assistant:state-management")` |
+| Testing | `Skill("angular-development-assistant:testing")` |
+| Modern Angular | `Skill("angular-development-assistant:modern-angular")` |
 
 ---
 
-## 🤖 Agents Overview
+## What This Plugin Does
 
-### 8 Implementation Agents - Each Does Real Work
+This plugin provides **8 specialized agents** that actively implement Angular code:
 
-<table>
-<thead>
-<tr>
-<th width="20%">Agent</th>
-<th width="40%">What It Does</th>
-<th width="40%">Example Tasks</th>
-</tr>
-</thead>
-<tbody>
-
-<tr>
-<td><strong>🔷 TypeScript</strong></td>
-<td>
-• Converts JS → TS<br>
-• Fixes type errors<br>
-• Implements generics<br>
-• Enforces strict mode
-</td>
-<td>
-<code>"Fix all type errors"</code><br>
-<code>"Add strict mode"</code><br>
-<code>"Convert to TypeScript"</code>
-</td>
-</tr>
-
-<tr>
-<td><strong>⚡ Modern Angular</strong></td>
-<td>
-• Implements Signals<br>
-• Migrates to standalone<br>
-• Adds @defer blocks<br>
-• Sets up SSR
-</td>
-<td>
-<code>"Migrate to standalone"</code><br>
-<code>"Add Signals state"</code><br>
-<code>"Implement @defer"</code>
-</td>
-</tr>
-
-<tr>
-<td><strong>🏗️ Core Builder</strong></td>
-<td>
-• Generates components<br>
-• Creates services<br>
-• Builds modules<br>
-• Implements DI
-</td>
-<td>
-<code>"Create UserService"</code><br>
-<code>"Generate component"</code><br>
-<code>"Add lifecycle hooks"</code>
-</td>
-</tr>
-
-<tr>
-<td><strong>💧 RxJS</strong></td>
-<td>
-• Implements observables<br>
-• Applies operators<br>
-• Fixes memory leaks<br>
-• Builds pipelines
-</td>
-<td>
-<code>"Add debouncing"</code><br>
-<code>"Fix memory leaks"</code><br>
-<code>"Convert to Observable"</code>
-</td>
-</tr>
-
-<tr>
-<td><strong>📝 Forms</strong></td>
-<td>
-• Builds reactive forms<br>
-• Implements validators<br>
-• Creates directives<br>
-• Generates dynamic forms
-</td>
-<td>
-<code>"Create registration form"</code><br>
-<code>"Add async validator"</code><br>
-<code>"Build wizard"</code>
-</td>
-</tr>
-
-<tr>
-<td><strong>🛣️ Routing</strong></td>
-<td>
-• Configures routing<br>
-• Implements lazy loading<br>
-• Creates guards<br>
-• Optimizes bundles
-</td>
-<td>
-<code>"Add lazy loading"</code><br>
-<code>"Create auth guard"</code><br>
-<code>"Optimize bundles"</code>
-</td>
-</tr>
-
-<tr>
-<td><strong>🗄️ State (NgRx)</strong></td>
-<td>
-• Sets up NgRx store<br>
-• Creates actions/reducers<br>
-• Builds selectors<br>
-• Implements effects
-</td>
-<td>
-<code>"Set up NgRx"</code><br>
-<code>"Add entity adapter"</code><br>
-<code>"Create effects"</code>
-</td>
-</tr>
-
-<tr>
-<td><strong>🧪 Testing</strong></td>
-<td>
-• Writes unit tests<br>
-• Implements E2E<br>
-• Optimizes builds<br>
-• Sets up CI/CD
-</td>
-<td>
-<code>"Write component tests"</code><br>
-<code>"Set up CI/CD"</code><br>
-<code>"Deploy to Vercel"</code>
-</td>
-</tr>
-
-</tbody>
-</table>
+| Agent | Purpose |
+|-------|---------|
+| **TypeScript Fundamentals** | Type safety, generics, decorators, JS-to-TS conversion |
+| **Angular Core** | Components, services, modules, DI, lifecycle hooks |
+| **Reactive Programming** | RxJS observables, operators, memory leak fixes |
+| **Forms & Directives** | Reactive forms, validators, custom directives |
+| **Routing & Performance** | Lazy loading, guards, bundle optimization |
+| **State Management** | NgRx store, actions, reducers, effects, selectors |
+| **Testing & Deployment** | Unit tests, E2E, CI/CD, production builds |
+| **Modern Angular** | Signals, standalone, @defer, SSR, zoneless, Material 3 |
 
 ---
 
-## 💡 Usage Examples
+## Agents Overview
 
-### 🎯 Example 1: Implement Angular Signals
+### 8 Implementation Agents
 
-<table>
-<tr>
-<td width="50%">
+Each agent is designed to **do the work**, not just explain:
 
-**❌ Before (BehaviorSubject)**
+| Agent | Capabilities | Example Prompts |
+|-------|--------------|-----------------|
+| **TypeScript** | Converts JS to TS, fixes type errors, implements generics, enforces strict mode | `"Fix all type errors"`, `"Convert to TypeScript"` |
+| **Modern Angular** | Implements Signals, migrates to standalone, adds @defer blocks, sets up SSR | `"Migrate to standalone"`, `"Add Signals state"` |
+| **Core Builder** | Generates components, creates services, builds modules, implements DI | `"Create UserService"`, `"Generate component"` |
+| **RxJS** | Implements observables, applies operators, fixes memory leaks, builds pipelines | `"Add debouncing"`, `"Fix memory leaks"` |
+| **Forms** | Builds reactive forms, implements validators, creates directives | `"Create registration form"`, `"Add async validator"` |
+| **Routing** | Configures routing, implements lazy loading, creates guards, optimizes bundles | `"Add lazy loading"`, `"Create auth guard"` |
+| **State (NgRx)** | Sets up NgRx store, creates actions/reducers, builds selectors, implements effects | `"Set up NgRx"`, `"Create effects"` |
+| **Testing** | Writes unit tests, implements E2E, optimizes builds, sets up CI/CD | `"Write component tests"`, `"Set up CI/CD"` |
+
+---
+
+## Skills Reference
+
+Each skill provides detailed implementation patterns:
+
+| Skill | Focus Areas |
+|-------|-------------|
+| **typescript** | Types, generics, decorators, strict mode |
+| **core** | Components, services, DI, lifecycle |
+| **rxjs** | Observables, operators, subjects, error handling |
+| **forms** | Reactive forms, validators, dynamic forms |
+| **routing** | Lazy loading, guards, resolvers, performance |
+| **state-management** | NgRx store, actions, reducers, effects, selectors |
+| **testing** | Unit tests, E2E, mocks, CI/CD |
+| **modern-angular** | Signals, standalone, @defer, SSR, zoneless |
+
+---
+
+## Usage Examples
+
+### Example 1: Implement Angular Signals
+
+**Before (BehaviorSubject):**
 ```typescript
-private userSubject =
-  new BehaviorSubject<User | null>(null);
+private userSubject = new BehaviorSubject<User | null>(null);
 user$ = this.userSubject.asObservable();
 
 ngOnDestroy() {
@@ -341,50 +159,29 @@ ngOnDestroy() {
 }
 ```
 
-</td>
-<td width="50%">
-
-**✅ After (Signals)**
+**After (Signals):**
 ```typescript
 user = signal<User | null>(null);
-userName = computed(() =>
-  this.user()?.name ?? 'Guest'
-);
+userName = computed(() => this.user()?.name ?? 'Guest');
 
-// No cleanup needed! 🎉
+// No cleanup needed!
 ```
 
-</td>
-</tr>
-</table>
+### Example 2: Migrate to Standalone
 
-**Agent Used:** Modern Angular (18+) Agent
-
----
-
-### 🏗️ Example 2: Migrate to Standalone
-
-```bash
+```
 User: "Migrate this entire app to standalone components"
 
 Agent: Modern Angular (18+)
-→ Runs ng generate @angular/core:standalone
-→ Converts all components to standalone: true
-→ Removes unnecessary NgModules
-→ Updates bootstrap to use standalone APIs
-→ Cleans up imports
-✅ Done in seconds!
+  - Converts all components to standalone: true
+  - Removes unnecessary NgModules
+  - Updates bootstrap to use standalone APIs
+  - Cleans up imports
 ```
 
----
+### Example 3: Add Deferrable Views
 
-### ⚡ Example 3: Add Deferrable Views
-
-<table>
-<tr>
-<td width="50%">
-
-**❌ Before (Everything loads)**
+**Before:**
 ```html
 <app-header />
 <app-hero />
@@ -392,13 +189,9 @@ Agent: Modern Angular (18+)
 <app-analytics />
 <app-chat-widget />
 ```
+Bundle size: 2.5 MB initial
 
-**Bundle size:** 2.5 MB initial
-
-</td>
-<td width="50%">
-
-**✅ After (@defer blocks)**
+**After:**
 ```html
 <app-header />
 <app-hero />
@@ -411,147 +204,48 @@ Agent: Modern Angular (18+)
   <app-chat-widget />
 }
 ```
+Bundle size: 800 KB initial (68% reduction)
 
-**Bundle size:** 800 KB initial (68% reduction!)
+### Example 4: Complete NgRx Setup
 
-</td>
-</tr>
-</table>
-
-**Agent Used:** Modern Angular (18+) + Routing & Performance
-
----
-
-### 🔥 Example 4: Complete NgRx Setup
-
-```bash
+```
 User: "Set up NgRx for product management with CRUD operations"
 
 Agent: State Management Implementation
-→ Creates feature store structure
-→ Generates actions (loadProducts, addProduct, etc.)
-→ Implements reducers with entity adapter
-→ Creates effects for HTTP calls
-→ Builds memoized selectors
-→ Adds error handling
-✅ Production-ready NgRx in minutes!
+  - Creates feature store structure
+  - Generates actions (loadProducts, addProduct, etc.)
+  - Implements reducers with entity adapter
+  - Creates effects for HTTP calls
+  - Builds memoized selectors
+  - Adds error handling
 ```
 
 ---
 
-## 🎨 Features Comparison
+## Modern Angular 18+ Features
 
-| Feature | Traditional Approach | With This Plugin |
-|---------|---------------------|------------------|
-| **Angular Signals** | Read docs, write code, debug | "Implement Signals" → Done ✅ |
-| **Standalone Migration** | Manual, error-prone, hours | Automated, safe, minutes ✅ |
-| **SSR Setup** | Complex configuration | "Add SSR" → Configured ✅ |
-| **@defer Optimization** | Manual analysis, placement | Strategic placement → 60% smaller bundle ✅ |
-| **NgRx Setup** | Boilerplate hell | Full setup in seconds ✅ |
-| **Type Safety** | Fix one by one | "Fix all type errors" ✅ |
+This plugin specializes in modern Angular:
 
----
-
-## 📊 Performance Gains
-
-<div align="center">
-
-```
-Performance Improvements with Modern Angular Features:
-
-@defer blocks:        ████████████████████  60% smaller initial bundle
-Zoneless detection:   ██████████            30% faster change detection
-SSR + Hydration:      ████████████████      70% better LCP score
-Signals:              ████████              25% less memory usage
-Standalone:           ██████████████        45% better tree-shaking
-```
-
-</div>
+| Feature | Support |
+|---------|---------|
+| Signals | signal(), computed(), effect() |
+| Standalone | No NgModules, tree-shakable |
+| @defer | Lazy loading, performance |
+| SSR | Hydration, Core Web Vitals |
+| Zoneless | No Zone.js, faster CD |
+| Material 3 | Modern design, M3 components |
+| Control Flow | @if, @for, @switch |
+| TypeScript 5.4+ | Latest features, strict mode |
 
 ---
 
-## 🎓 Skills Reference
-
-Each agent comes with detailed skill documentation:
-
-- 🔷 **TypeScript Implementation** - Types, generics, decorators
-- ⚡ **Modern Angular** - Signals, standalone, @defer, SSR
-- 🏗️ **Angular Core** - Components, services, DI
-- 💧 **RxJS** - Observables, operators, subjects
-- 📝 **Forms** - Reactive forms, validators
-- 🛣️ **Routing** - Lazy loading, guards, performance
-- 🗄️ **State (NgRx)** - Store, actions, reducers, effects
-- 🧪 **Testing** - Unit, E2E, CI/CD, deployment
-
----
-
-## 🏆 Why Choose This Plugin?
-
-<table>
-<tr>
-<td width="33%">
-
-### 🚀 **Speed**
-Generate in seconds what takes hours to write manually
-
-</td>
-<td width="33%">
-
-### 💎 **Quality**
-Production-tested patterns and best practices built-in
-
-</td>
-<td width="33%">
-
-### 🎯 **Modern**
-Always up-to-date with latest Angular features
-
-</td>
-</tr>
-<tr>
-<td width="33%">
-
-### ✅ **Complete**
-From code generation to deployment, all covered
-
-</td>
-<td width="33%">
-
-### 🧪 **Tested**
-Tests included with every implementation
-
-</td>
-<td width="33%">
-
-### 📚 **Documented**
-Clear examples and patterns for every feature
-
-</td>
-</tr>
-</table>
-
----
-
-## 📦 What's Included
+## Plugin Structure
 
 ```
-✅ 8 Specialized Implementation Agents
-✅ 8 Comprehensive Skill Guides
-✅ 4 Helper Commands (/learn, /explore, /assess, /projects)
-✅ Modern Angular 18+ Support
-✅ Production-Ready Code Generation
-✅ Best Practices Built-In
-✅ Performance Optimization
-✅ Complete Documentation
-```
-
----
-
-## 🎯 Plugin Structure
-
-```
-angular-development-assistant/
-├── 📁 agents/                 # 8 implementation agents
+custom-plugin-angular/
+├── .claude-plugin/
+│   └── plugin.json           # Plugin manifest
+├── agents/                   # 8 implementation agents
 │   ├── 01-typescript-fundamentals.md
 │   ├── 02-angular-core.md
 │   ├── 03-reactive-programming.md
@@ -559,105 +253,64 @@ angular-development-assistant/
 │   ├── 05-routing-performance.md
 │   ├── 06-state-management.md
 │   ├── 07-testing-deployment.md
-│   └── 08-modern-angular.md   # ⚡ NEW!
-│
-├── 📁 skills/                 # 8 skill guides
-│   ├── typescript/
-│   ├── core/
-│   ├── rxjs/
-│   ├── forms/
-│   ├── routing/
-│   ├── state-management/
-│   ├── testing/
-│   └── modern-angular/        # ⚡ NEW!
-│
-├── 📁 commands/               # Helper commands
-└── 📁 .claude-plugin/         # Plugin config
+│   └── 08-modern-angular.md
+├── skills/                   # 8 skill guides
+│   ├── typescript/SKILL.md
+│   ├── core/SKILL.md
+│   ├── rxjs/SKILL.md
+│   ├── forms/SKILL.md
+│   ├── routing/SKILL.md
+│   ├── state-management/SKILL.md
+│   ├── testing/SKILL.md
+│   └── modern-angular/SKILL.md
+├── commands/                 # 4 helper commands
+│   ├── learn.md
+│   ├── explore.md
+│   ├── assess.md
+│   └── projects.md
+├── hooks/                    # Hook definitions
+├── README.md
+├── INSTALLATION.md
+└── LICENSE
 ```
 
 ---
 
-## 🎬 Demo Videos & Tutorials
+## Performance Gains
 
-<!-- Placeholder for demo videos -->
+Expected improvements with modern Angular features:
 
-> **📹 Coming Soon:**
-> - Signals implementation walkthrough
-> - Standalone migration step-by-step
-> - @defer optimization strategies
-> - SSR setup and deployment
-
-**Want to contribute a demo?** [Open an issue!](https://github.com/pluginagentmarketplace/custom-plugin-angular/issues)
-
----
-
-## 🤝 Community & Support
-
-<div align="center">
-
-[![GitHub Stars](https://img.shields.io/github/stars/pluginagentmarketplace/custom-plugin-angular?style=social)](https://github.com/pluginagentmarketplace/custom-plugin-angular)
-[![GitHub Issues](https://img.shields.io/github/issues/pluginagentmarketplace/custom-plugin-angular)](https://github.com/pluginagentmarketplace/custom-plugin-angular/issues)
-[![GitHub PRs](https://img.shields.io/github/issues-pr/pluginagentmarketplace/custom-plugin-angular)](https://github.com/pluginagentmarketplace/custom-plugin-angular/pulls)
-
-[💬 Discussions](https://github.com/pluginagentmarketplace/custom-plugin-angular/discussions) •
-[🐛 Report Bug](https://github.com/pluginagentmarketplace/custom-plugin-angular/issues/new?labels=bug) •
-[✨ Request Feature](https://github.com/pluginagentmarketplace/custom-plugin-angular/issues/new?labels=enhancement)
-
-</div>
+| Feature | Improvement |
+|---------|-------------|
+| @defer blocks | ~60% smaller initial bundle |
+| Zoneless detection | ~30% faster change detection |
+| SSR + Hydration | ~70% better LCP score |
+| Signals | ~25% less memory usage |
+| Standalone | ~45% better tree-shaking |
 
 ---
 
-## 🚢 Production Ready
+## Contributing
 
-This plugin is battle-tested and production-ready:
+Contributions are welcome:
 
-- ✅ **Angular 18+** compatible
-- ✅ **TypeScript 5.4+** support
-- ✅ **Modern patterns** (Signals, standalone, SSR)
-- ✅ **Performance optimized** (@defer, zoneless)
-- ✅ **Best practices** built-in
-- ✅ **Testing focused** (Unit + E2E)
-- ✅ **CI/CD ready** (GitHub Actions, etc.)
-- ✅ **Actively maintained** (Regular updates)
+1. Fork the repository
+2. Create a feature branch
+3. Make your changes
+4. Submit a pull request
 
 ---
 
-## 📝 License
+## License
 
-MIT License - See [LICENSE](LICENSE) file for details
-
----
-
-## 🌟 Star History
-
-<div align="center">
-
-[![Star History Chart](https://api.star-history.com/svg?repos=pluginagentmarketplace/custom-plugin-angular&type=Date)](https://star-history.com/#pluginagentmarketplace/custom-plugin-angular&Date)
-
-</div>
-
----
-
-## 💝 Support the Project
-
-If this plugin helps you ship Angular apps faster, consider:
-
-- ⭐ **Starring** the repository
-- 🐛 **Reporting bugs** or requesting features
-- 💬 **Sharing** with your team
-- 🤝 **Contributing** improvements
+MIT License - See [LICENSE](LICENSE) for details.
 
 ---
 
 <div align="center">
 
-### 🚀 Ready to Ship Angular Apps Faster?
-
-[Get Started Now](#-quick-start) • [View Documentation](#-agents-overview) • [See Examples](#-usage-examples)
-
-**Built with ❤️ for the Angular community**
+**Built for the Angular community**
 
 [![Made with Angular](https://img.shields.io/badge/Made%20with-Angular-red?style=for-the-badge&logo=angular)](https://angular.dev)
-[![Powered by Claude](https://img.shields.io/badge/Powered%20by-Claude-blue?style=for-the-badge)](https://claude.ai)
 
 </div>
