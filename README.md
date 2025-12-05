@@ -40,14 +40,9 @@
 /plugin marketplace add pluginagentmarketplace/custom-plugin-angular
 
 # Step 2: Install the plugin
-/plugin install angular-development-assistant@angular-development-assistant
+/plugin install angular-development-assistant@pluginagentmarketplace-angular
 
-# Step 3: Restart Claude Code to load the plugin
-```
-
-Alternative URL format:
-```bash
-/plugin marketplace add https://github.com/pluginagentmarketplace/custom-plugin-angular
+# Step 3: Restart Claude Code to load new plugins
 ```
 
 ### Option 2: Clone and Load Locally
