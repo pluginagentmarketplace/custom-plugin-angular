@@ -33,7 +33,24 @@
 
 ## Quick Start
 
-### Option 1: Clone and Load (Recommended)
+### Option 1: Install from GitHub (Recommended)
+
+```bash
+# Step 1: Add the marketplace from GitHub
+/plugin marketplace add pluginagentmarketplace/custom-plugin-angular
+
+# Step 2: Install the plugin
+/plugin install angular-development-assistant@angular-development-assistant
+
+# Step 3: Restart Claude Code to load the plugin
+```
+
+Alternative URL format:
+```bash
+/plugin marketplace add https://github.com/pluginagentmarketplace/custom-plugin-angular
+```
+
+### Option 2: Clone and Load Locally
 
 ```bash
 # Clone the repository
@@ -46,17 +63,7 @@ cd custom-plugin-angular
 /plugin load .
 ```
 
-After loading, restart Claude Code. The plugin will be available as `angular-development-assistant`.
-
-### Option 2: Direct GitHub Clone
-
-```bash
-# Clone to your plugins directory
-cd ~/.claude/plugins
-git clone https://github.com/pluginagentmarketplace/custom-plugin-angular.git
-
-# Restart Claude Code
-```
+After loading, restart Claude Code.
 
 ### Verify Installation
 
@@ -244,7 +251,8 @@ This plugin specializes in modern Angular:
 ```
 custom-plugin-angular/
 ├── .claude-plugin/
-│   └── plugin.json           # Plugin manifest
+│   ├── plugin.json           # Plugin manifest
+│   └── marketplace.json      # Marketplace config
 ├── agents/                   # 8 implementation agents
 │   ├── 01-typescript-fundamentals.md
 │   ├── 02-angular-core.md

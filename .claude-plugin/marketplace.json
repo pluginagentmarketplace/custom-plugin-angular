@@ -4,41 +4,13 @@
     "name": "Plugin Agent Marketplace",
     "email": "plugins@pluginagentmarketplace.com"
   },
-  "metadata": {
-    "description": "Community marketplace for Angular development plugins and tools",
-    "version": "1.0.0",
-    "updated": "2025-11-20",
-    "pluginRoot": "./"
-  },
   "plugins": [
     {
-      "name": "angular-dev",
+      "name": "angular-development-assistant",
       "source": "./",
-      "description": "Professional Angular 18+ development plugin with 8 specialized implementation agents. Build modern Angular apps with Signals, standalone components, SSR, @defer blocks, TypeScript, RxJS, NgRx, forms, routing, testing, and CI/CD. Includes comprehensive skills for modern Angular development.",
+      "description": "Professional Angular 18+ development plugin with 8 specialized implementation agents for modern Angular apps.",
       "version": "2.0.0",
-      "category": "web-development",
-      "keywords": [
-        "angular",
-        "angular-18",
-        "signals",
-        "standalone-components",
-        "ssr",
-        "defer",
-        "typescript",
-        "rxjs",
-        "ngrx",
-        "state-management",
-        "routing",
-        "forms",
-        "testing",
-        "deployment",
-        "frontend",
-        "web-development",
-        "implementation",
-        "refactoring",
-        "zoneless",
-        "material-3"
-      ],
+      "keywords": ["angular", "angular-18", "signals", "standalone", "ssr", "typescript", "rxjs", "ngrx"],
       "author": {
         "name": "Plugin Agent Marketplace",
         "email": "plugins@pluginagentmarketplace.com"
