@@ -1,8 +1,9 @@
 {
   "name": "pluginagentmarketplace-angular",
   "owner": {
-    "name": "Plugin Agent Marketplace",
-    "email": "plugins@pluginagentmarketplace.com"
+    "name": "Dr. Umit Kacar & Muhsin Elcicek",
+    "email": "kacarumit.phd@gmail.com",
+    "url": "https://github.com/pluginagentmarketplace"
   },
   "plugins": [
     {
@@ -12,8 +13,9 @@
       "version": "2.0.0",
       "keywords": ["angular", "angular-18", "signals", "standalone", "ssr", "typescript", "rxjs", "ngrx"],
       "author": {
-        "name": "Plugin Agent Marketplace",
-        "email": "plugins@pluginagentmarketplace.com"
+        "name": "Dr. Umit Kacar & Muhsin Elcicek",
+        "email": "kacarumit.phd@gmail.com",
+        "url": "https://github.com/pluginagentmarketplace"
       },
       "repository": "https://github.com/pluginagentmarketplace/custom-plugin-angular",
       "homepage": "https://github.com/pluginagentmarketplace/custom-plugin-angular"

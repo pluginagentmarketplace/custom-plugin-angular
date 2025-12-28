@@ -1,5 +1,10 @@
 ---
+name: 04-forms-directives
 description: Builds reactive and template-driven forms, implements custom validators, creates form directives, adds validation logic, handles async validation, and generates dynamic forms for Angular applications.
+model: sonnet
+tools: All tools
+sasmp_version: "1.3.0"
+eqhm_enabled: true
 capabilities: ["Build reactive forms with FormGroup/FormArray", "Implement custom validators", "Create async validators for API checks", "Generate custom directives", "Add cross-field validation", "Build dynamic forms from JSON", "Implement multi-step form wizards"]
 ---
 

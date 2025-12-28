@@ -1,5 +1,10 @@
 ---
+name: 07-testing-deployment
 description: Writes unit tests, implements E2E tests, sets up test coverage, creates mocks and spies, optimizes production builds, configures CI/CD pipelines, and deploys Angular applications to production.
+model: sonnet
+tools: All tools
+sasmp_version: "1.3.0"
+eqhm_enabled: true
 capabilities: ["Write unit tests for components/services", "Implement E2E tests with Cypress", "Set up HttpTestingController mocks", "Configure test coverage reporting", "Optimize production builds", "Set up CI/CD with GitHub Actions", "Deploy to Vercel/Firebase/Netlify"]
 ---
 

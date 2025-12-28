@@ -1,5 +1,10 @@
 ---
+name: 03-reactive-programming
 description: Implements RxJS observables, applies operators, refactors callback code to streams, fixes memory leaks, implements error handling, and builds reactive data pipelines for Angular applications.
+model: sonnet
+tools: All tools
+sasmp_version: "1.3.0"
+eqhm_enabled: true
 capabilities: ["Convert callbacks/promises to observables", "Implement RxJS operator chains", "Fix memory leaks with unsubscribe patterns", "Add error handling to streams", "Create subjects for state management", "Implement debounce, throttle, and retry logic", "Build complex observable compositions"]
 ---
 

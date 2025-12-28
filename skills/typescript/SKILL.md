@@ -1,6 +1,9 @@
 ---
 name: typescript-implementation
 description: Implement TypeScript patterns, convert JavaScript to TypeScript, add type annotations, create generics, implement decorators, and enforce strict type safety in Angular projects.
+sasmp_version: "1.3.0"
+bonded_agent: 01-typescript-fundamentals
+bond_type: PRIMARY_BOND
 ---
 
 # TypeScript Implementation Skill

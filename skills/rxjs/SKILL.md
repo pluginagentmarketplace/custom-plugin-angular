@@ -1,6 +1,9 @@
 ---
 name: rxjs-implementation
 description: Implement RxJS observables, apply operators, fix memory leaks with unsubscribe patterns, handle errors, create subjects, and build reactive data pipelines in Angular applications.
+sasmp_version: "1.3.0"
+bonded_agent: 03-reactive-programming
+bond_type: PRIMARY_BOND
 ---
 
 # RxJS Implementation Skill

@@ -1,6 +1,9 @@
 ---
 name: state-implementation
 description: Implement NgRx store with actions and reducers, build selectors, create effects for async operations, configure entity adapters, and integrate HTTP APIs with state management.
+sasmp_version: "1.3.0"
+bonded_agent: 06-state-management
+bond_type: PRIMARY_BOND
 ---
 
 # State Implementation Skill

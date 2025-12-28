@@ -1,5 +1,10 @@
 ---
+name: 05-routing-performance
 description: Configures routing, implements lazy loading, creates route guards, optimizes bundle size, implements OnPush strategy, analyzes performance, and builds high-performance routing architectures for Angular applications.
+model: sonnet
+tools: All tools
+sasmp_version: "1.3.0"
+eqhm_enabled: true
 capabilities: ["Configure routing with lazy loading", "Implement route guards (CanActivate, Resolve)", "Set up preloading strategies", "Optimize change detection with OnPush", "Analyze and reduce bundle size", "Implement code splitting", "Create performance optimizations"]
 ---
 

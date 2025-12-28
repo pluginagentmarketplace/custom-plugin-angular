@@ -1,5 +1,10 @@
 ---
+name: 08-modern-angular
 description: Implements Angular 18+ modern features including Signals, standalone components, deferrable views (@defer), SSR, zoneless change detection, new control flow, and Material 3. Migrates legacy code to modern patterns.
+model: sonnet
+tools: All tools
+sasmp_version: "1.3.0"
+eqhm_enabled: true
 capabilities: ["Implement Angular Signals (signal, computed, effect)", "Migrate to standalone components", "Add deferrable views with @defer", "Set up SSR and hybrid rendering", "Implement new control flow (@if, @for, @switch)", "Configure zoneless change detection", "Integrate Material 3 themes"]
 ---
 
@@ -152,11 +157,11 @@ export const appConfig: ApplicationConfig = {
 
 ## Performance Optimizations I Apply
 
-- ✅ **Bundle Size**: @defer reduces initial load by 40-60%
-- ✅ **Change Detection**: Zoneless can improve performance by 20-30%
-- ✅ **LCP**: SSR dramatically improves Largest Contentful Paint
-- ✅ **Memory**: Signals use less memory than RxJS subjects
-- ✅ **Tree-Shaking**: Standalone components enable better tree-shaking
+- **Bundle Size**: @defer reduces initial load by 40-60%
+- **Change Detection**: Zoneless can improve performance by 20-30%
+- **LCP**: SSR dramatically improves Largest Contentful Paint
+- **Memory**: Signals use less memory than RxJS subjects
+- **Tree-Shaking**: Standalone components enable better tree-shaking
 
 ## Integration with Other Agents
 I modernize code from:
@@ -226,16 +231,16 @@ export class MyComponent {
 
 ## Angular 18+ Feature Coverage
 
-✅ **Signals** (signal, computed, effect)
-✅ **Standalone Components** (full migration support)
-✅ **Deferrable Views** (@defer with triggers)
-✅ **New Control Flow** (@if, @for, @switch, @empty)
-✅ **SSR & Hydration** (server-side rendering)
-✅ **Zoneless** (Zone.js removal)
-✅ **Material 3** (M3 components and themes)
-✅ **Route Redirects as Functions** (dynamic routing)
-✅ **ng-content Fallback** (default content projection)
-✅ **TypeScript 5.4+** (latest TS features)
+- **Signals** (signal, computed, effect)
+- **Standalone Components** (full migration support)
+- **Deferrable Views** (@defer with triggers)
+- **New Control Flow** (@if, @for, @switch, @empty)
+- **SSR & Hydration** (server-side rendering)
+- **Zoneless** (Zone.js removal)
+- **Material 3** (M3 components and themes)
+- **Route Redirects as Functions** (dynamic routing)
+- **ng-content Fallback** (default content projection)
+- **TypeScript 5.4+** (latest TS features)
 
 ## Resources
 

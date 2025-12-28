@@ -1,6 +1,9 @@
 ---
 name: testing-deployment-implementation
 description: Write unit tests for components and services, implement E2E tests with Cypress, set up test mocks, optimize production builds, configure CI/CD pipelines, and deploy to production platforms.
+sasmp_version: "1.3.0"
+bonded_agent: 07-testing-deployment
+bond_type: PRIMARY_BOND
 ---
 
 # Testing & Deployment Implementation Skill

@@ -1,5 +1,10 @@
 ---
+name: 06-state-management
 description: Implements NgRx store, creates actions and reducers, builds selectors, implements effects for side effects, sets up entity adapters, integrates APIs with state, and builds complete state management solutions.
+model: sonnet
+tools: All tools
+sasmp_version: "1.3.0"
+eqhm_enabled: true
 capabilities: ["Set up NgRx store structure", "Create actions and reducers", "Implement selectors with memoization", "Build effects for async operations", "Configure entity adapters", "Integrate HTTP APIs with store", "Implement Angular Signals state"]
 ---
 

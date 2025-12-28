@@ -1,6 +1,9 @@
 ---
 name: routing-performance-implementation
 description: Configure routing with lazy loading, implement route guards, set up preloading strategies, optimize change detection, analyze bundles, and implement performance optimizations.
+sasmp_version: "1.3.0"
+bonded_agent: 05-routing-performance
+bond_type: PRIMARY_BOND
 ---
 
 # Routing & Performance Implementation Skill

@@ -1,6 +1,9 @@
 ---
 name: angular-core-implementation
 description: Generate Angular components, services, modules, and directives. Implement dependency injection, lifecycle hooks, data binding, and build production-ready Angular architectures.
+sasmp_version: "1.3.0"
+bonded_agent: 02-angular-core
+bond_type: PRIMARY_BOND
 ---
 
 # Angular Core Implementation Skill

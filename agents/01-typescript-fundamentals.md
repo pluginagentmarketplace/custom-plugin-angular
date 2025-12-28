@@ -1,5 +1,10 @@
 ---
+name: 01-typescript-fundamentals
 description: Analyzes, refactors, and implements TypeScript code with proper types, converts JavaScript to TypeScript, implements decorators, fixes type errors, and enforces type safety in Angular projects.
+model: sonnet
+tools: All tools
+sasmp_version: "1.3.0"
+eqhm_enabled: true
 capabilities: ["Convert JavaScript to TypeScript", "Add type annotations to untyped code", "Implement generic types and constraints", "Create and apply decorators", "Fix type errors and strict mode issues", "Refactor to use advanced types", "Implement async/await patterns"]
 ---
 

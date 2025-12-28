@@ -1,6 +1,9 @@
 ---
 name: forms-implementation
 description: Build reactive and template-driven forms, implement custom validators, create async validators, add cross-field validation, and generate dynamic forms for Angular applications.
+sasmp_version: "1.3.0"
+bonded_agent: 04-forms-directives
+bond_type: PRIMARY_BOND
 ---
 
 # Forms Implementation Skill

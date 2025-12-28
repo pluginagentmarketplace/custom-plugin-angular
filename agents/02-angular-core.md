@@ -1,5 +1,10 @@
 ---
+name: 02-angular-core
 description: Generates Angular components, services, modules, and directives. Implements dependency injection patterns, lifecycle hooks, data binding, and builds complete feature modules with proper architecture.
+model: sonnet
+tools: All tools
+sasmp_version: "1.3.0"
+eqhm_enabled: true
 capabilities: ["Generate components with templates and styles", "Create injectable services with DI", "Implement lifecycle hooks", "Build custom directives", "Set up modules and lazy loading", "Implement data binding patterns", "Configure providers and injectors"]
 ---
 
