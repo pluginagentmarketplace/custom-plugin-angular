@@ -7,7 +7,7 @@
 **Build modern Angular applications faster with AI-powered implementation agents**
 
 [![Verified](https://img.shields.io/badge/Verified-Working-success?style=flat-square&logo=checkmarx)](https://github.com/pluginagentmarketplace/custom-plugin-angular)
-[![License](https://img.shields.io/badge/License-MIT-yellow?style=flat-square)](LICENSE)
+[![License](https://img.shields.io/badge/License-Custom-yellow?style=flat-square)](LICENSE)
 [![Version](https://img.shields.io/badge/Version-2.0.0-blue?style=flat-square)](https://github.com/pluginagentmarketplace/custom-plugin-angular)
 [![Status](https://img.shields.io/badge/Status-Production_Ready-brightgreen?style=flat-square)](https://github.com/pluginagentmarketplace/custom-plugin-angular)
 [![Agents](https://img.shields.io/badge/Agents-8-orange?style=flat-square)](#agents-overview)
@@ -306,7 +306,7 @@ Contributions are welcome:
 
 ## License
 
-MIT License - See [LICENSE](LICENSE) for details.
+Custom License - See [LICENSE](LICENSE) for details.
 
 ---
 
