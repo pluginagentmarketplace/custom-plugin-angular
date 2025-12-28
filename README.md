@@ -37,7 +37,7 @@
 
 ```bash
 # Step 1: Add the marketplace from GitHub
-/plugin marketplace add pluginagentmarketplace/custom-plugin-angular
+/plugin add marketplace pluginagentmarketplace/custom-plugin-angular
 
 # Step 2: Install the plugin
 /plugin install angular-development-assistant@pluginagentmarketplace-angular

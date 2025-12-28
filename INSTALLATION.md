@@ -24,18 +24,18 @@ The easiest way to install the plugin is through the Claude Code marketplace sys
 #### Step 1: Add the Marketplace
 
 ```bash
-/plugin marketplace add pluginagentmarketplace/custom-plugin-angular
+/plugin add marketplace pluginagentmarketplace/custom-plugin-angular
 ```
 
 This command:
 - Fetches the marketplace.json from the repository
 - Registers the Angular plugin marketplace
-- Makes the `angular-dev` plugin available for installation
+- Makes the `angular-development-assistant` plugin available for installation
 
 #### Step 2: Install the Plugin
 
 ```bash
-/plugin install angular-dev@angular-dev
+/plugin install angular-development-assistant@pluginagentmarketplace-angular
 ```
 
 This command:
@@ -54,12 +54,12 @@ This command:
 /explore
 
 # Check plugin version
-/plugin info angular-dev
+/plugin info angular-development-assistant
 ```
 
 You should see:
 ```
-✅ angular-dev@2.0.0 installed
+✅ angular-development-assistant@2.0.0 installed
 ✅ 8 agents available
 ✅ 8 skills loaded
 ✅ 4 commands registered
@@ -172,8 +172,8 @@ If you get "Plugin not found" error:
 /plugin marketplace refresh
 
 # Try reinstalling
-/plugin uninstall angular-dev
-/plugin install angular-dev@angular-dev
+/plugin uninstall angular-development-assistant
+/plugin install angular-development-assistant@pluginagentmarketplace-angular
 ```
 
 ### Agents Not Loading
@@ -182,10 +182,10 @@ If agents don't appear:
 
 ```bash
 # Check plugin status
-/plugin info angular-dev
+/plugin info angular-development-assistant
 
 # Reload the plugin
-/plugin reload angular-dev
+/plugin reload angular-development-assistant
 
 # Check Claude Code logs
 cat ~/.claude-code/logs/plugins.log
@@ -200,10 +200,10 @@ If you have version issues:
 /plugin list --all
 
 # Uninstall old version
-/plugin uninstall angular-dev@1.0.0
+/plugin uninstall angular-development-assistant@1.0.0
 
 # Install latest
-/plugin install angular-dev@angular-dev
+/plugin install angular-development-assistant@pluginagentmarketplace-angular
 ```
 
 ### Marketplace Sync Issues
@@ -215,7 +215,7 @@ If marketplace won't sync:
 /plugin marketplace clear
 
 # Re-add marketplace
-/plugin marketplace add pluginagentmarketplace/custom-plugin-angular
+/plugin add marketplace pluginagentmarketplace/custom-plugin-angular
 
 # Force sync
 /plugin marketplace sync
@@ -232,7 +232,7 @@ If marketplace won't sync:
 /plugin outdated
 
 # Update to latest version
-/plugin update angular-dev
+/plugin update angular-development-assistant
 
 # Update all plugins
 /plugin update --all
@@ -243,7 +243,7 @@ If marketplace won't sync:
 ```bash
 cd custom-plugin-angular
 git pull origin main
-/plugin reload angular-dev
+/plugin reload angular-development-assistant
 ```
 
 ---
@@ -254,7 +254,7 @@ git pull origin main
 
 ```bash
 # Uninstall the plugin
-/plugin uninstall angular-dev
+/plugin uninstall angular-development-assistant
 
 # Remove marketplace
 /plugin marketplace remove pluginagentmarketplace/custom-plugin-angular
@@ -264,7 +264,7 @@ git pull origin main
 
 ```bash
 # Remove all traces
-/plugin uninstall angular-dev --purge
+/plugin uninstall angular-development-assistant --purge
 
 # Clear cache
 /plugin cache clear
@@ -280,7 +280,7 @@ Set a custom installation directory:
 
 ```bash
 export CLAUDE_PLUGIN_PATH="$HOME/.claude-plugins"
-/plugin install angular-dev@angular-dev
+/plugin install angular-development-assistant@pluginagentmarketplace-angular
 ```
 
 ### Enable Debug Mode
@@ -289,7 +289,7 @@ For troubleshooting:
 
 ```bash
 export CLAUDE_DEBUG=true
-/plugin install angular-dev@angular-dev
+/plugin install angular-development-assistant@pluginagentmarketplace-angular
 ```
 
 ### Selective Agent Loading
@@ -300,11 +300,11 @@ Load only specific agents:
 {
   "plugins": [
     {
-      "name": "angular-dev",
+      "name": "angular-development-assistant",
       "agents": [
-        "modern-angular",
-        "typescript-implementation",
-        "angular-core-builder"
+        "08-modern-angular",
+        "01-typescript-fundamentals",
+        "02-angular-core"
       ]
     }
   ]
@@ -329,8 +329,8 @@ If using Claude Code in VS Code:
 ```bash
 # Cursor has built-in Claude Code support
 # Install via marketplace as normal
-/plugin marketplace add pluginagentmarketplace/custom-plugin-angular
-/plugin install angular-dev@angular-dev
+/plugin add marketplace pluginagentmarketplace/custom-plugin-angular
+/plugin install angular-development-assistant@pluginagentmarketplace-angular
 ```
 
 ### Windsurf Integration
@@ -338,7 +338,7 @@ If using Claude Code in VS Code:
 ```bash
 # Windsurf supports Claude Code plugins
 # Use the same marketplace commands
-/plugin marketplace add pluginagentmarketplace/custom-plugin-angular
+/plugin add marketplace pluginagentmarketplace/custom-plugin-angular
 ```
 
 ---
