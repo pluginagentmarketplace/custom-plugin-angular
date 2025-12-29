@@ -12,6 +12,7 @@
 [![Status](https://img.shields.io/badge/Status-Production_Ready-brightgreen?style=flat-square)](https://github.com/pluginagentmarketplace/custom-plugin-angular)
 [![Agents](https://img.shields.io/badge/Agents-8-orange?style=flat-square)](#agents-overview)
 [![Skills](https://img.shields.io/badge/Skills-8-purple?style=flat-square)](#skills-reference)
+[![SASMP](https://img.shields.io/badge/SASMP-v1.3.0-blueviolet?style=flat-square)](#)
 
 [![Angular](https://img.shields.io/badge/Angular-18%2B-red?style=for-the-badge&logo=angular)](https://angular.dev)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.4-blue?style=for-the-badge&logo=typescript)](https://www.typescriptlang.org/)
@@ -293,13 +294,24 @@ Expected improvements with modern Angular features:
 
 ---
 
+## Metadata
+
+| Field | Value |
+|-------|-------|
+| **Last Updated** | 2025-12-28 |
+| **Maintenance Status** | Active |
+| **SASMP Version** | 1.3.0 |
+| **Support** | [Issues](../../issues) |
+
+---
+
 ## Contributing
 
 Contributions are welcome:
 
 1. Fork the repository
 2. Create a feature branch
-3. Make your changes
+3. Follow the Golden Format for new skills
 4. Submit a pull request
 
 ---
@@ -310,10 +322,22 @@ Custom License - See [LICENSE](LICENSE) for details.
 
 ---
 
+## Contributors
+
+**Authors:**
+- **Dr. Umit Kacar** - Senior AI Researcher & Engineer
+- **Muhsin Elcicek** - Senior Software Architect
+
+---
+
 <div align="center">
 
-**Built for the Angular community**
+**Build modern Angular applications with AI assistance!**
 
-[![Made with Angular](https://img.shields.io/badge/Made%20with-Angular-red?style=for-the-badge&logo=angular)](https://angular.dev)
+[![Made with Angular](https://img.shields.io/badge/Made%20with-Angular%20Developers-red?style=for-the-badge&logo=angular)](https://github.com/pluginagentmarketplace/custom-plugin-angular)
+
+**Built by Dr. Umit Kacar & Muhsin Elcicek**
+
+*Based on [roadmap.sh/angular](https://roadmap.sh/angular)*
 
 </div>

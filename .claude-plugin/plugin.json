@@ -1,35 +1,41 @@
 {
   "name": "angular-development-assistant",
   "version": "2.0.0",
-  "description": "Professional Angular 18+ development plugin with 8 specialized implementation agents. Build modern Angular apps with Signals, standalone components, SSR, @defer blocks, TypeScript, RxJS, NgRx, forms, routing, testing, and CI/CD.",
+  "description": "Professional Angular 18+ development plugin with 8 agents and 8 skills. Build modern Angular apps with Signals, standalone components, SSR, @defer blocks, TypeScript, RxJS, NgRx, forms, routing, and testing.",
   "author": {
     "name": "Dr. Umit Kacar & Muhsin Elcicek",
     "email": "kacarumit.phd@gmail.com",
     "url": "https://github.com/pluginagentmarketplace"
   },
-  "license": "SEE LICENSE IN LICENSE",
-  "repository": "https://github.com/pluginagentmarketplace/custom-plugin-angular",
   "homepage": "https://github.com/pluginagentmarketplace/custom-plugin-angular",
-  "keywords": [
-    "angular",
-    "angular-18",
-    "signals",
-    "standalone-components",
-    "ssr",
-    "defer",
-    "typescript",
-    "rxjs",
-    "ngrx",
-    "state-management",
-    "routing",
-    "forms",
-    "testing",
-    "deployment",
-    "frontend",
-    "web-development",
-    "implementation",
-    "refactoring",
-    "zoneless",
-    "material-3"
-  ]
+  "repository": "https://github.com/pluginagentmarketplace/custom-plugin-angular",
+  "license": "SEE LICENSE IN LICENSE",
+  "keywords": ["angular", "angular-18", "signals", "typescript", "rxjs", "ngrx", "standalone-components"],
+  "agents": [
+    "./agents/01-typescript-fundamentals.md",
+    "./agents/02-angular-core.md",
+    "./agents/03-reactive-programming.md",
+    "./agents/04-forms-directives.md",
+    "./agents/05-routing-performance.md",
+    "./agents/06-state-management.md",
+    "./agents/07-testing-deployment.md",
+    "./agents/08-modern-angular.md"
+  ],
+  "skills": [
+    "./skills/typescript/SKILL.md",
+    "./skills/core/SKILL.md",
+    "./skills/rxjs/SKILL.md",
+    "./skills/forms/SKILL.md",
+    "./skills/routing/SKILL.md",
+    "./skills/state-management/SKILL.md",
+    "./skills/testing/SKILL.md",
+    "./skills/modern-angular/SKILL.md"
+  ],
+  "commands": [
+    "./commands/assess.md",
+    "./commands/explore.md",
+    "./commands/learn.md",
+    "./commands/projects.md"
+  ],
+  "hooks": "./hooks/hooks.json"
 }
