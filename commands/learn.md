@@ -1,3 +1,9 @@
+---
+name: learn
+description: Start your Angular learning journey with structured learning paths
+allowed-tools: Read
+---
+
 # /learn - Angular Learning Paths
 
 ## Overview

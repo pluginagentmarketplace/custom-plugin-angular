@@ -1,3 +1,9 @@
+---
+name: assess
+description: Test your Angular knowledge with quizzes and get personalized improvement recommendations
+allowed-tools: Read
+---
+
 # /assess - Knowledge Assessment
 
 ## Test Your Angular Knowledge

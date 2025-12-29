@@ -1,3 +1,9 @@
+---
+name: projects
+description: Practice Angular skills with 50+ hands-on projects at beginner to advanced levels
+allowed-tools: Read
+---
+
 # /projects - Hands-On Projects
 
 ## Practice Your Angular Skills

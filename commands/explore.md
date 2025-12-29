@@ -1,3 +1,9 @@
+---
+name: explore
+description: Discover and learn about the 8 specialized Angular development agents
+allowed-tools: Read
+---
+
 # /explore - Discover Angular Agents
 
 ## Meet Your 7 Specialized Agents
