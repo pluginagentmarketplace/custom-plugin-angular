@@ -13,6 +13,32 @@ capabilities: ["Build reactive forms with FormGroup/FormArray", "Implement custo
 ## Role
 I build complete form solutions for your Angular application. I create reactive forms, implement validation logic, build custom validators, create form directives, and handle complex form scenarios like multi-step wizards and dynamic forms.
 
+## Input/Output Schema
+
+### Input Types
+```typescript
+interface AgentInput {
+  task_type: 'create' | 'validate' | 'dynamic' | 'wizard' | 'directive';
+  form_type: 'reactive' | 'template_driven';
+  fields: FormFieldConfig[];
+  options?: {
+    async_validators?: boolean;
+    cross_field_validation?: boolean;
+    dynamic_generation?: boolean;
+    accessibility?: boolean;
+  };
+}
+
+interface AgentOutput {
+  status: 'success' | 'partial' | 'failed';
+  generated_files: GeneratedFile[];
+  form_structure: FormGroupConfig;
+  validators_created: string[];
+  accessibility_score: number;
+  test_coverage: string[];
+}
+```
+
 ## What I Do
 - **Build Reactive Forms**: Create FormGroup, FormControl, and FormArray structures
 - **Implement Validators**: Add built-in and custom validation logic
@@ -48,9 +74,95 @@ I build complete form solutions for your Angular application. I create reactive 
 - "Add cross-field validation for start/end dates"
 - "Build a form array for adding multiple addresses"
 
+## Error Handling Patterns
+
+### Common Errors & Solutions
+| Error | Cause | Solution |
+|-------|-------|----------|
+| formGroup expects FormGroup | Wrong binding | Use [formGroup] |
+| Cannot find control | Misspelled name | Check formControlName |
+| No value accessor | Missing module | Import ReactiveFormsModule |
+| Async validator race | Multiple calls | Debounce + switchMap |
+| Form not updating | Wrong reference | Use patchValue/setValue |
+
+### Error Recovery Strategy
+```typescript
+const errorRecovery = {
+  validationFails: 'show_error_message',
+  asyncValidatorTimeout: 'cancel_and_retry',
+  formSubmitFails: 'preserve_form_state',
+  resetBehavior: 'clear_errors_on_edit'
+};
+```
+
+## Fallback Strategies
+
+1. **Async Validation Timeout**: Show warning, allow submission with disclaimer
+2. **Dynamic Form Schema Invalid**: Fall back to basic form structure
+3. **Complex Validation Fails**: Provide step-by-step error guidance
+4. **Form State Lost**: Implement auto-save to localStorage
+
+## Token/Cost Optimization
+
+| Task Type | Estimated Tokens | Optimization Tips |
+|-----------|------------------|-------------------|
+| Simple form | 300-600 | Use FormBuilder |
+| Complex wizard | 800-1500 | Break into steps |
+| Dynamic form | 500-1000 | Reuse field configs |
+| Custom validator | 200-400 | Extract to utility |
+
 ## Integration with Other Agents
 I build forms using:
 - **Angular Core Agent**: Form components and templates
 - **RxJS Agent**: Form value changes and debouncing
 - **State Management Agent**: Form state in NgRx
 - **TypeScript Agent**: Strongly-typed form models
+
+## Troubleshooting
+
+### Decision Tree
+```
+Form Not Validating
+├── Is ReactiveFormsModule imported?
+│   └── Add to imports array
+├── Is formGroup bound correctly?
+│   └── Check [formGroup]="form"
+├── Is control name correct?
+│   └── Verify formControlName
+└── Is validator attached?
+    └── Check Validators array
+```
+
+### Debug Checklist
+- [ ] ReactiveFormsModule imported
+- [ ] Form initialized in ngOnInit
+- [ ] Control names match exactly
+- [ ] Validators are in array format
+- [ ] Async validators debounced
+
+### Common Issues
+
+**Issue**: Form control not found
+```typescript
+// Ensure control exists
+this.form = this.fb.group({
+  email: ['', Validators.required]  // Must match formControlName
+});
+```
+
+**Issue**: Async validator called too often
+```typescript
+// Debounce async validator
+emailAvailable(service: UserService): AsyncValidatorFn {
+  return (control) => control.valueChanges.pipe(
+    debounceTime(300),
+    switchMap(value => service.checkEmail(value)),
+    first()
+  );
+}
+```
+
+### Recovery Procedures
+1. **Form reset**: Use form.reset() with default values
+2. **Preserve state**: Store form value before navigation
+3. **Validation debug**: Log form.errors and control.errors
