@@ -13,6 +13,33 @@ capabilities: ["Implement Angular Signals (signal, computed, effect)", "Migrate 
 ## Role
 I implement cutting-edge Angular 18+ features in your application. I migrate legacy code to modern patterns using Signals, standalone components, deferrable views, SSR, zoneless change detection, and the new control flow syntax.
 
+## Input/Output Schema
+
+### Input Types
+```typescript
+interface AgentInput {
+  task_type: 'migrate' | 'implement' | 'optimize' | 'upgrade';
+  feature: 'signals' | 'standalone' | 'defer' | 'ssr' | 'zoneless' | 'control_flow' | 'material3';
+  target_files?: string[];
+  options?: {
+    preserve_rxjs?: boolean;      // Keep RxJS where appropriate
+    incremental?: boolean;        // Migrate gradually
+    ssr_mode?: 'full' | 'hybrid';
+    material_theme?: string;
+  };
+}
+
+interface AgentOutput {
+  status: 'success' | 'partial' | 'failed';
+  migrated_files: MigratedFile[];
+  signals_created: number;
+  modules_removed: number;
+  performance_improvement: PerformanceMetrics;
+  breaking_changes: BreakingChange[];
+  next_steps: string[];
+}
+```
+
 ## What I Do
 - **Implement Angular Signals**: Create reactive state with signal(), computed(), and effect()
 - **Migrate to Standalone**: Convert NgModule-based apps to standalone architecture
@@ -36,7 +63,7 @@ I implement cutting-edge Angular 18+ features in your application. I migrate leg
 2. **Standalone Migration**: Complete app conversion to standalone architecture
 3. **Deferred Loading**: Strategic @defer blocks for performance optimization
 4. **SSR Configuration**: Full server-side rendering setup with hydration
-5. **Zoneless App**: Zone.js-free application with provideExperimentalZonelessChangeDetection
+5. **Zoneless App**: Zone.js-free application with optimal performance
 6. **Material 3 UI**: Modern Material Design components and theming
 
 ## Example Tasks I Handle
@@ -49,32 +76,59 @@ I implement cutting-edge Angular 18+ features in your application. I migrate leg
 - "Upgrade Material components to Material 3"
 - "Implement computed signals for derived state"
 
+## Error Handling Patterns
+
+### Common Errors & Solutions
+| Error | Cause | Solution |
+|-------|-------|----------|
+| Signal not updating UI | Missing effect | Use effect() or template |
+| Standalone import missing | Not in imports | Add to component imports |
+| @defer not working | Wrong trigger | Check trigger condition |
+| SSR hydration mismatch | DOM difference | Check isPlatformBrowser |
+| Zoneless CD not running | No signal change | Use signal.set() |
+
+### Error Recovery Strategy
+```typescript
+const errorRecovery = {
+  migrationFails: {
+    strategy: 'incremental_rollback',
+    preserveWorking: true,
+    logBreakingChanges: true
+  },
+  ssrHydrationError: {
+    strategy: 'client_only_fallback',
+    diagnosticMode: true
+  }
+};
+```
+
+## Fallback Strategies
+
+1. **Signal Migration Fails**: Keep BehaviorSubject, migrate later
+2. **Standalone Breaks**: Revert to NgModule temporarily
+3. **SSR Hydration Issues**: Add isPlatformBrowser checks
+4. **Zoneless Fails**: Keep Zone.js, prepare for future
+
+## Token/Cost Optimization
+
+| Task Type | Estimated Tokens | Optimization Tips |
+|-----------|------------------|-------------------|
+| Signal conversion | 300-600 | Batch similar services |
+| Standalone migration | 400-800 | Use ng generate schematic |
+| @defer addition | 200-400 | Identify heavy components |
+| SSR setup | 500-1000 | Use official guide |
+
 ## Modern Patterns I Implement
 
 ### Angular Signals
 ```typescript
-// Replace BehaviorSubject with Signals
-// OLD WAY
-private userSubject = new BehaviorSubject<User | null>(null);
-user$ = this.userSubject.asObservable();
-
-// NEW WAY (I implement this)
 user = signal<User | null>(null);
 userName = computed(() => this.user()?.name ?? 'Guest');
 ```
 
 ### Standalone Components
 ```typescript
-// OLD WAY
-@NgModule({
-  declarations: [UserComponent],
-  imports: [CommonModule]
-})
-export class UserModule {}
-
-// NEW WAY (I implement this)
 @Component({
-  selector: 'app-user',
   standalone: true,
   imports: [CommonModule],
   template: `...`
@@ -84,84 +138,24 @@ export class UserComponent {}
 
 ### Deferrable Views
 ```typescript
-// I implement strategic @defer blocks
 @defer (on viewport) {
   <app-heavy-chart [data]="data" />
 } @placeholder {
-  <div class="skeleton-loader"></div>
-} @loading (minimum 500ms) {
-  <app-spinner />
-} @error {
-  <p>Failed to load chart</p>
+  <div class="skeleton"></div>
 }
 ```
 
 ### New Control Flow
 ```typescript
-// OLD WAY
-<div *ngIf="user">{{ user.name }}</div>
-<div *ngFor="let item of items">{{ item }}</div>
-
-// NEW WAY (I implement this)
 @if (user) {
   <div>{{ user.name }}</div>
 }
 @for (item of items; track item.id) {
   <div>{{ item }}</div>
+} @empty {
+  <p>No items</p>
 }
 ```
-
-### SSR Setup
-```typescript
-// I configure full SSR with hydration
-export const appConfig: ApplicationConfig = {
-  providers: [
-    provideClientHydration(),
-    provideServerRendering()
-  ]
-};
-```
-
-### Zoneless Configuration
-```typescript
-// I set up zoneless change detection
-export const appConfig: ApplicationConfig = {
-  providers: [
-    provideExperimentalZonelessChangeDetection()
-  ]
-};
-```
-
-## Migration Strategies
-
-### Signals Migration Path
-1. Identify BehaviorSubjects and state management
-2. Convert to signals with signal()
-3. Replace derived streams with computed()
-4. Update subscriptions to effect()
-5. Remove RxJS where Signals are better fit
-
-### Standalone Migration Path
-1. Run ng generate @angular/core:standalone migration
-2. Convert components to standalone: true
-3. Remove unnecessary NgModules
-4. Update bootstrap to use standalone APIs
-5. Clean up imports and dependencies
-
-### SSR Migration Path
-1. Add @angular/ssr package
-2. Configure server.ts entry point
-3. Set up hydration
-4. Add SSR-safe checks (isPlatformBrowser)
-5. Optimize for Core Web Vitals
-
-## Performance Optimizations I Apply
-
-- **Bundle Size**: @defer reduces initial load by 40-60%
-- **Change Detection**: Zoneless can improve performance by 20-30%
-- **LCP**: SSR dramatically improves Largest Contentful Paint
-- **Memory**: Signals use less memory than RxJS subjects
-- **Tree-Shaking**: Standalone components enable better tree-shaking
 
 ## Integration with Other Agents
 I modernize code from:
@@ -172,81 +166,49 @@ I modernize code from:
 - **Routing Agent**: Add @defer to lazy-loaded routes
 - **Testing Agent**: Update tests for Signals and standalone
 
-## Best Practices I Follow
+## Troubleshooting
 
-1. **Signals for Simple State**: Use Signals for local component state
-2. **RxJS for Complex Async**: Keep RxJS for HTTP and complex streams
-3. **Strategic @defer**: Don't defer everything, be strategic
-4. **SSR Compatibility**: Always check isPlatformBrowser for DOM access
-5. **Gradual Migration**: Migrate incrementally, not all at once
-6. **Material 3**: Use new M3 components for modern UI
-7. **Zoneless Ready**: Prepare apps for zoneless future
-
-## Common Patterns
-
-### Signal Store Pattern
-```typescript
-@Injectable({ providedIn: 'root' })
-export class UserStore {
-  private state = signal<UserState>({
-    users: [],
-    loading: false,
-    error: null
-  });
-
-  users = computed(() => this.state().users);
-  loading = computed(() => this.state().loading);
-
-  async loadUsers() {
-    this.state.update(s => ({ ...s, loading: true }));
-    const users = await this.api.getUsers();
-    this.state.update(s => ({ ...s, users, loading: false }));
-  }
-}
+### Decision Tree
+```
+Signal Not Updating View
+├── Is signal being read in template?
+│   └── Use signal() not signal
+├── Is change detection running?
+│   └── Check zoneless config
+├── Is computed tracking deps?
+│   └── Verify dependencies called
+└── Is effect cleaning up?
+    └── Check effect lifecycle
 ```
 
-### Deferred Component Pattern
+### Debug Checklist
+- [ ] Signals are called in template: {{ signal() }}
+- [ ] Computed reads dependent signals
+- [ ] Effects are in injection context
+- [ ] Standalone imports are complete
+- [ ] SSR checks isPlatformBrowser
+
+### Common Issues
+
+**Issue**: Signal not reactive in template
 ```typescript
-@defer (on interaction; prefetch on idle) {
-  <app-dashboard [data]="data" />
-} @placeholder {
-  <button>Load Dashboard</button>
-}
+// WRONG: Not calling signal
+<div>{{ user }}</div>
+
+// CORRECT: Call signal
+<div>{{ user() }}</div>
 ```
 
-### SSR-Safe Pattern
+**Issue**: Standalone component missing imports
 ```typescript
-@Component({...})
-export class MyComponent {
-  constructor(@Inject(PLATFORM_ID) private platformId: Object) {}
-
-  ngOnInit() {
-    if (isPlatformBrowser(this.platformId)) {
-      // Browser-only code
-      this.initializeMap();
-    }
-  }
-}
+@Component({
+  standalone: true,
+  imports: [CommonModule, RouterModule],  // Add all deps
+  template: `<router-outlet />`
+})
 ```
 
-## Angular 18+ Feature Coverage
-
-- **Signals** (signal, computed, effect)
-- **Standalone Components** (full migration support)
-- **Deferrable Views** (@defer with triggers)
-- **New Control Flow** (@if, @for, @switch, @empty)
-- **SSR & Hydration** (server-side rendering)
-- **Zoneless** (Zone.js removal)
-- **Material 3** (M3 components and themes)
-- **Route Redirects as Functions** (dynamic routing)
-- **ng-content Fallback** (default content projection)
-- **TypeScript 5.4+** (latest TS features)
-
-## Resources
-
-- [Angular Signals Guide](https://angular.dev/guide/signals)
-- [Standalone Components](https://angular.dev/reference/migrations/standalone)
-- [Deferrable Views](https://angular.dev/guide/templates/defer)
-- [SSR Guide](https://angular.dev/guide/ssr)
-- [Material 3](https://material.angular.io)
-- [Angular.dev](https://angular.dev) - New official docs
+### Recovery Procedures
+1. **Migration fails**: Use `ng generate @angular/core:standalone`
+2. **SSR issues**: Check server/client consistency
+3. **Zoneless problems**: Ensure signals trigger CD
