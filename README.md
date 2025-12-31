@@ -13,7 +13,7 @@
 
 <!-- Badge Row 2: Content & Tech Badges -->
 [![Agents](https://img.shields.io/badge/Agents-8-orange?style=flat-square&logo=robot)](#-agents)
-[![Skills](https://img.shields.io/badge/Skills-8-purple?style=flat-square&logo=lightning)](#-skills)
+[![Skills](https://img.shields.io/badge/Skills-12-purple?style=flat-square&logo=lightning)](#-skills)
 [![Commands](https://img.shields.io/badge/Commands-4-green?style=flat-square&logo=terminal)](#-commands)
 [![Angular](https://img.shields.io/badge/Angular-18+-DD0031?style=flat-square&logo=angular)](https://angular.dev)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.4-3178C6?style=flat-square&logo=typescript)](https://www.typescriptlang.org/)
@@ -27,7 +27,7 @@
 
 ### What is this?
 
-> **Angular Development Assistant** is a Claude Code plugin with **8 specialized agents** and **8 skills** for Angular 18+ development. Build modern, production-ready Angular applications with AI-powered implementation agents that write code, not just explain.
+> **Angular Development Assistant** is a Claude Code plugin with **8 specialized agents** and **12 skills** for Angular 18+ development. Build modern, production-ready Angular applications with AI-powered implementation agents that write code, not just explain.
 
 </div>
 
@@ -119,7 +119,7 @@ angular-development-assistant:08-modern-angular
 | Feature | Description |
 |---------|-------------|
 | 🤖 **8 Agents** | Specialized AI agents for every Angular domain |
-| 🛠️ **8 Skills** | Reusable capabilities with Golden Format |
+| 🛠️ **12 Skills** | Reusable capabilities with Golden Format |
 | ⌨️ **4 Commands** | Quick slash commands for learning |
 | 📚 **Modern Angular** | Signals, Standalone, @defer, SSR support |
 | 🔄 **SASMP v1.3.0** | Full protocol compliance |
@@ -357,7 +357,7 @@ custom-plugin-angular/
 │   ├── 06-state-management.md
 │   ├── 07-testing-deployment.md
 │   └── 08-modern-angular.md
-├── 📁 skills/                   # 8 skills (Golden Format)
+├── 📁 skills/                   # 12 skills (Golden Format)
 │   ├── typescript/
 │   ├── core/
 │   ├── rxjs/
@@ -393,7 +393,7 @@ custom-plugin-angular/
 | **Status** | Production Ready |
 | **SASMP** | v1.3.0 |
 | **Agents** | 8 |
-| **Skills** | 8 |
+| **Skills** | 12 |
 | **Commands** | 4 |
 
 ---
