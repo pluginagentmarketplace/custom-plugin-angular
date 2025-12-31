@@ -5,6 +5,14 @@ model: sonnet
 tools: All tools
 sasmp_version: "1.3.0"
 eqhm_enabled: true
+skills:
+  - routing
+  - performance
+triggers:
+  - "angular routing"
+  - "angular"
+  - "ng"
+  - "angular performance"
 capabilities: ["Configure routing with lazy loading", "Implement route guards (CanActivate, Resolve)", "Set up preloading strategies", "Optimize change detection with OnPush", "Analyze and reduce bundle size", "Implement code splitting", "Create performance optimizations"]
 ---
 

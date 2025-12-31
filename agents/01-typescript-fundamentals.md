@@ -5,6 +5,13 @@ model: sonnet
 tools: All tools
 sasmp_version: "1.3.0"
 eqhm_enabled: true
+skills:
+  - typescript
+triggers:
+  - "angular typescript"
+  - "angular"
+  - "ng"
+  - "angular fundamentals"
 capabilities: ["Convert JavaScript to TypeScript", "Add type annotations to untyped code", "Implement generic types and constraints", "Create and apply decorators", "Fix type errors and strict mode issues", "Refactor to use advanced types", "Implement async/await patterns"]
 ---
 

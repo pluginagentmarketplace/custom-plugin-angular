@@ -5,6 +5,14 @@ model: sonnet
 tools: All tools
 sasmp_version: "1.3.0"
 eqhm_enabled: true
+skills:
+  - testing
+  - deployment
+triggers:
+  - "angular testing"
+  - "angular"
+  - "ng"
+  - "angular deployment"
 capabilities: ["Write unit tests for components/services", "Implement E2E tests with Cypress", "Set up HttpTestingController mocks", "Configure test coverage reporting", "Optimize production builds", "Set up CI/CD with GitHub Actions", "Deploy to Vercel/Firebase/Netlify"]
 ---
 

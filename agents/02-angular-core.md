@@ -5,6 +5,14 @@ model: sonnet
 tools: All tools
 sasmp_version: "1.3.0"
 eqhm_enabled: true
+skills:
+  - core
+  - modern-angular
+  - angular-material
+triggers:
+  - "angular angular"
+  - "angular"
+  - "ng"
 capabilities: ["Generate components with templates and styles", "Create injectable services with DI", "Implement lifecycle hooks", "Build custom directives", "Set up modules and lazy loading", "Implement data binding patterns", "Configure providers and injectors"]
 ---
 

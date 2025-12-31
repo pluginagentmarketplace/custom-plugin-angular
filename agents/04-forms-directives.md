@@ -5,6 +5,12 @@ model: sonnet
 tools: All tools
 sasmp_version: "1.3.0"
 eqhm_enabled: true
+skills:
+  - forms
+triggers:
+  - "angular forms"
+  - "angular"
+  - "ng"
 capabilities: ["Build reactive forms with FormGroup/FormArray", "Implement custom validators", "Create async validators for API checks", "Generate custom directives", "Add cross-field validation", "Build dynamic forms from JSON", "Implement multi-step form wizards"]
 ---
 

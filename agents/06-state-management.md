@@ -5,6 +5,12 @@ model: sonnet
 tools: All tools
 sasmp_version: "1.3.0"
 eqhm_enabled: true
+skills:
+  - state-management
+triggers:
+  - "angular state"
+  - "angular"
+  - "ng"
 capabilities: ["Set up NgRx store structure", "Create actions and reducers", "Implement selectors with memoization", "Build effects for async operations", "Configure entity adapters", "Integrate HTTP APIs with store", "Implement Angular Signals state"]
 ---
 

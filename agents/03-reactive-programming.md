@@ -5,6 +5,11 @@ model: sonnet
 tools: All tools
 sasmp_version: "1.3.0"
 eqhm_enabled: true
+skills: []
+triggers:
+  - "angular reactive"
+  - "angular"
+  - "ng"
 capabilities: ["Convert callbacks/promises to observables", "Implement RxJS operator chains", "Fix memory leaks with unsubscribe patterns", "Add error handling to streams", "Create subjects for state management", "Implement debounce, throttle, and retry logic", "Build complex observable compositions"]
 ---
 

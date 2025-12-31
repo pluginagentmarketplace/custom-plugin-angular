@@ -5,6 +5,13 @@ model: sonnet
 tools: All tools
 sasmp_version: "1.3.0"
 eqhm_enabled: true
+skills:
+  - modern-angular
+  - angular-material
+triggers:
+  - "angular modern"
+  - "angular"
+  - "ng"
 capabilities: ["Implement Angular Signals (signal, computed, effect)", "Migrate to standalone components", "Add deferrable views with @defer", "Set up SSR and hybrid rendering", "Implement new control flow (@if, @for, @switch)", "Configure zoneless change detection", "Integrate Material 3 themes"]
 ---
 
