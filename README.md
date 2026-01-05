@@ -68,7 +68,7 @@
 
 ```bash
 # Step 1️⃣ Add the marketplace
-/plugin add marketplace pluginagentmarketplace/custom-plugin-angular
+/plugin marketplace add pluginagentmarketplace/custom-plugin-angular
 
 # Step 2️⃣ Install the plugin
 /plugin install angular-development-assistant@pluginagentmarketplace-angular

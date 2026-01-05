@@ -12,7 +12,19 @@
   "homepage": "https://github.com/pluginagentmarketplace/custom-plugin-angular",
   "repository": "https://github.com/pluginagentmarketplace/custom-plugin-angular",
   "license": "SEE LICENSE IN LICENSE",
-  "keywords": ["angular", "angular-18", "angular-19", "signals", "typescript", "rxjs", "ngrx", "standalone-components", "ssr", "material-3", "production-grade"],
+  "keywords": [
+    "angular",
+    "angular-18",
+    "angular-19",
+    "signals",
+    "typescript",
+    "rxjs",
+    "ngrx",
+    "standalone-components",
+    "ssr",
+    "material-3",
+    "production-grade"
+  ],
   "agents": [
     "./agents/01-typescript-fundamentals.md",
     "./agents/02-angular-core.md",
@@ -43,7 +55,6 @@
     "./commands/learn.md",
     "./commands/projects.md"
   ],
-  "hooks": "./hooks/hooks.json",
   "integrity": {
     "agent_count": 8,
     "skill_count": 12,
