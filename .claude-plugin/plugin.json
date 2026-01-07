@@ -1,8 +1,6 @@
 {
   "name": "angular-development-assistant",
   "version": "3.0.0",
-  "sasmp_version": "1.3.0",
-  "eqhm_compliance": true,
   "description": "Production-grade Angular 18+ development plugin with 8 specialized agents and 12 comprehensive skills. Build enterprise-ready Angular apps with Signals, standalone components, SSR, @defer blocks, TypeScript, RxJS, NgRx, Material 3, forms, routing, testing, and deployment.",
   "author": {
     "name": "Dr. Umit Kacar & Muhsin Elcicek",
@@ -54,12 +52,5 @@
     "./commands/explore.md",
     "./commands/learn.md",
     "./commands/projects.md"
-  ],
-  "integrity": {
-    "agent_count": 8,
-    "skill_count": 12,
-    "command_count": 4,
-    "bond_validation": true,
-    "circular_dependency_check": true
-  }
+  ]
 }
