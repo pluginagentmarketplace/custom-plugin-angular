@@ -11,8 +11,6 @@
       "source": "./",
       "description": "Production-grade Angular 18+ plugin with 8 specialized agents and 12 comprehensive skills. Enterprise-ready Angular development with Signals, standalone components, SSR, @defer, Material 3, NgRx, and full testing/deployment support.",
       "version": "3.0.0",
-      "sasmp_version": "1.3.0",
-      "eqhm_compliance": true,
       "keywords": ["angular", "angular-18", "angular-19", "signals", "standalone", "ssr", "typescript", "rxjs", "ngrx", "material-3", "production-grade", "enterprise"],
       "author": {
         "name": "Dr. Umit Kacar & Muhsin Elcicek",
@@ -20,12 +18,7 @@
         "url": "https://github.com/pluginagentmarketplace"
       },
       "repository": "https://github.com/pluginagentmarketplace/custom-plugin-angular",
-      "homepage": "https://github.com/pluginagentmarketplace/custom-plugin-angular",
-      "stats": {
-        "agents": 8,
-        "skills": 12,
-        "commands": 4
-      }
+      "homepage": "https://github.com/pluginagentmarketplace/custom-plugin-angular"
     }
   ]
 }
